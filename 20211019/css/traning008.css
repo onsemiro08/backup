@@ -33,8 +33,8 @@ position:absolute;top:50%;left:0;transform:translateY(-50%);}
 
 
 
-#visual {color:#fff;text-align:center;}
-#visual .main_slider {height:600px;}
+#visual {}
+#visual .main_slider {color:#fff;text-align:center;}
 #visual .main_slider figure {height:600px;position:relative;}
 #visual .main_slider .item1 {background:url(../img/main_iteam01.jpg) no-repeat center center/cover}
 #visual .main_slider .item2 {background:url(../img/main_iteam02.jpg) no-repeat center center/cover}
@@ -42,6 +42,9 @@ position:absolute;top:50%;left:0;transform:translateY(-50%);}
 
 #visual .main_slider figure .container {position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);width:1200px;}
 
-#visual .main_slider h3 {font-size:60px;font-weight:900;margin-bottom:20px;}
-#visual .main_slider p {font-size:15px;font-weight:300;margin-bottom:20px;}
-#visual .main_slider a {display:block;width:120px;background:#333;margin:0 auto;line-height:30px;}
+#visual .main_slider figure h3 {font-size:60px;font-weight:900;margin-bottom:20px;opacity:0;transform:translateY(100px);}
+#visual .main_slider figure.on h3 {opacity:1;transform:translateY(0);transition:0.5s;}
+#visual .main_slider figure p {font-size:15px;font-weight:300;margin-bottom:20px;opacity:0;transform:translateY(100px);}
+#visual .main_slider figure.on p {opacity:1;transform:translateY(0);transition:0.5s 0.5s;}
+#visual .main_slider figure a {display:block;width:150px;background:#333;margin:0 auto;line-height:30px;opacity:0;transform:translateY(100px);}
+#visual .main_slider figure.on a {opacity:1;transform:translateY(0);transition:0.5s 1s;}
