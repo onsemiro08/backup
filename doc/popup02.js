@@ -41,14 +41,21 @@ $('#toTop').on('click', function(){
         // }else{
         //      $('#toTop').fadeOut()
         // }
-
         sct>400 ? $('#toTop').fadeIn() : $('#toTop').fadeOut();
+        $('#scroll_banner').css({top:600+sct})
+
     }) //상단으로 올라가는 화살표, 위에 있을 때는 안 보임
 
     $('#left_banner i').on('click',function(){
         $('#left_banner').toggleClass('on');
         $(this).toggleClass('on');
     })
+
+$('#right_banner i').on('click',function(){
+        $('#right_banner').toggleClass('on');
+        $(this).toggleClass('on');
+    })
+
 //---------------------------------------------------------------
 
 });

@@ -78,6 +78,17 @@ background:#f7f7f7;}
 
 /*왼쪽에서 튀어나오는 메뉴*/
 
+#right_banner {position:fixed;top:400px;right:-300px;transition:0.4s;}
+#right_banner.on {right:0;}
+#right_banner ul {background:#fff;width:300px;height:500px;padding:0 15px;}
+#right_banner ul>li {line-height:50px;border-bottom:1px solid #ddd;}
+#right_banner i {position:absolute;top:0;left:-50px;font-size:30px;padding:10px;
+background:#f7f7f7;}
+#right_banner i.on {transform:rotate(-180deg);}
+
+#scroll_banner {position:absolute;top:300px;right:300px;transition:1s;}
+#scroll_banner li {padding:20px;background:#333;color:#fff;margin:5px 0;}
+
 #bottom_banner {position:fixed;bottom:0;color: #fff;width:100%;}
 #bottom_banner .case {background:#333;}
 #bottom_banner .container {width:1200px;margin:0 auto;padding:30px 15px;}
