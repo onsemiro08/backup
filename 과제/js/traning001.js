@@ -1,7 +1,7 @@
 $(function(){
 
-$('#top_banner .container i').on('click', function(){
-    $(this).parent().parent().slideUp();
-});
-
-});
+    $('#top_banner .container i').on('click', function(){
+        $(this).parent().parent().slideUp();
+    });
+    
+    });
