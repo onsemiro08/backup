@@ -1,0 +1,5 @@
+#wrap {min-width:1900px;}
+
+#top_banner {text-align:center;background:#fdc743;color: #333;height:40px;}
+#top_banner .container h2 {font-size:16px;font-weight:500;}
+#top_banner .container i {position:absolute;top:8px;right:15px;padding:5px;}
