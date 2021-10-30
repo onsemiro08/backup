@@ -1,14 +1,18 @@
+@font-face {
+    font-family:"neon";src: url('../font/a뉴굴림4.ttf') format('truetype');}
+
+
 #wrap {min-width:1900px;}
 
 #top_banner {text-align:center;background:#fdc743;color: #333;height:40px;}
-#top_banner .container {width: 1200px;margin:0 auto;padding:10px 0;position:relative;}
+#top_banner .container {width:1200px;margin:0 auto;padding:10px 0;position:relative;}
 #top_banner .container h2 {font-weight:500;}
 #top_banner .container i {position:absolute;top:10px;right:15px;}
 /* 상단 광고 */
 
 #header .login_menu {display:flex;justify-content:flex-end;padding:0 40px;}
 
-#header .container {width:1200px;margin:0 auto;padding:10px 0;position:relative;}
+#header .container {width:1200px;margin:0 auto;padding:10px 0;}
 #header h1 {text-align:left;padding:30px 0;}
 #header img {width:136px;height:64px;}
 /* 페스룸 로고 */
@@ -29,3 +33,22 @@
 #main_visual .main_btn i {position:absolute;top:50%;padding:60px 50px;font-size:36px;cursor:pointer;color:#fff;}
 #main_visual .main_btn i.xi-angle-left {left:100px;}
 #main_visual .main_btn i.xi-angle-right {right:100px;}
+
+#visual01 {padding:100px 0;height:800px;text-align:center;background:#f7f7f7;}
+#visual01 .main_text h2 {margin-bottom:15px;}
+#visual01 .main_text p {font-family:'neon';font-size:24px;margin-bottom:70px;}
+#visual01 .container {display:flex;width:1200px;margin:0 auto;}
+#visual01 .case {margin-bottom:15px;}
+#visual01 .container figure {flex:1;border-left:1px solid #f00;border-right:1px solid #f00;}
+#visual01 .container figure img {width:378px;}
+#visual01 .container strong {position:absolute;background:#062f87;color:#fff;
+    width:60px;height:20px;}
+#visual01 .teim1 {text-align:center;background:#062f87;color:#fff;position:relative;}
+#visual01 .teim2 {text-align:center;margin-left:30px;
+    margin-right:30px;background:#062f87;color:#fff;}
+#visual01 .teim3 {text-align:center;background:#062f87;color:#fff;}
+#visual01 .container figure h3 {margin:15px 0;font-weight:400;}
+#visual01 .container figure p {margin:5px 0;font-size:13px;font-weight:100;
+text-decoration:line-through;}
+#visual01 .container figure span {margin:10px 0;margin-bottom:15px;
+    font-size:18px;color:#fdc743;}
