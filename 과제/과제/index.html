@@ -1,205 +1,93 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/traning001.css">
-    <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/slick.js"></script>
-    <script src="./js/traning001.js"></script>
-    
-    <title>페스룸</title>
-</head>
-<body>
-
-<!--상단 광고-->
-<div id="wrap">
-    <div id="top_banner">
-        <div class="container">
-            <h2>카카오톡 채널 친구 추가시 3,000원 할인 쿠폰 지급!</h2>
-            <i class="xi-close"></i>
-        </div>
-    </div>
-<!--상단 광고-->
-
-<!--헤더-->
-    <header id="header">
-        <div class="menu_">
-            <nav>
-                <ul>
-                    <li><a href="#">로그인</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">KOR <i class="xi-caret-down"></i></a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="container">
-            <h1>
-                <a href="./index.html">
-                    <img src="./img/yellow-logo.png" alt="logo">
-                </a>
-            </h1>
-            <div class="blank">
-            </div>
-            <div class="header_search">
-                <form id="header_search" action="">
-                    <input type="text">
-                    <button>
-                        <i class="xi-search"></i>
-                    </button>
-                </form>
-            </div>
-            <div class="icon">
-                <nav>
-                    <ul>
-                        <a href="#!"><i class="xi-truck"></i></a>
-                        <a href="#!"><i class="xi-cart-o"></i></a>
-                        <a href="#!"><i class="xi-user-o"></i></a>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="list">
-            <nav>
-            <ul>
-                <li><a href="#!">기업소개</a></li>
-                <li><a href="#!">고양이 용품</a></li>
-                <li><a href="#!">강아지 용품</a></li>
-                <li><a href="#!">리뷰</a></li>
-                <li><a href="#!">이벤트</a></li>
-                <li><a href="#!">사업문의</a></li>
-            </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="main_visual">
-        <div class="main_slider">
-                <figure class="itm01"></figure>
-                <figure class="itm02"></figure>
-                <figure class="itm03"></figure>
-        </div>
-        <div class="main_btn">
-            <i class="xi-angle-left"></i>
-            <i class="xi-angle-right"></i>
-        </div>
-    </section>
-<!--헤더-->
+@font-face {font-family:"neon";src: url('../font/a뉴굴림4.ttf') format('truetype');}
 
 
-<!--메인 슬라이드-->
-    <main>
-    <section id="visual01">
-        <div class="main_text">
-            <h2>new</h2>
-            <p>신상품</p>
-        </div>
-        <div class="container">
-            <div class="teim1">
-                <figure>
-                    <div class="discount">43%</div>
-                    <img src="./img/new1.png" alt="">
-                    <h3>덴탈 클린 칫솔 (M) + 덴탈 클린 치약</h3>
-                    <p>32,500원</p>
-                    <span class="imtext">18,500원</span>
-                </figure>
-            </div>
+#wrap {min-width:1900px;}
 
-            <div class="teim1">
-                <figure>
-                    <div class="discount">7%</div>
-                    <div class="deve">자체개발</div>
-                    <img src="./img/new2.png" alt="">
-                    <h3>더스트 프리 벤토나이트 파인</h3>
-                    <p>28,900원</p>
-                    <span class="imtext">22,900원</span>
-                </figure>
-            </div>
+#top_banner {text-align:center;background:#fdc743;color: #333;}
+#top_banner .container {width:1200px;margin:0 auto;padding:10px 0;position:relative;}
+#top_banner .container h2 {font-weight:500;}
+#top_banner .container i {position:absolute;top:10px;right:15px;}
+/* 상단 광고 */
 
-            <div class="teim2">
-                <figure>
-                    <div class="discount">36%</div>
-                    <img src="./img/new3.png" alt="">
-                    <h3>모이스처 미스트 캣츠 + 힐링 브러쉬</h3>
-                    <p>50,000원</p>
-                    <span class="imtext">31,900원</span>
-                </figure>
-            </div>
+#header .menu_ {width:1200px;height:20px;margin:0 auto;}
+#header .menu_ nav>ul {display:flex;float:right}
+#header .menu_ nav>ul>li>a {padding:5px 5px;font-size:12px;}
+#header i {font-size:12px;}
 
-        </div>
-    </section>
-<!--메인 슬라이드-->
-    <section id="visual02">
-        <div class="container">
-            <iframe width="1200" height="600" src="https://www.youtube.com/embed/zpZl0D1vC30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
-    
-    <section id="visual03">
-        <div class="container">
-            <p> 양치가 어려운 반려동물을 위한 바르는 치약 </p>
-            <h3>덴탈 솔루션 치약</h3>
-            <span>강력한 천연 분해 효소 3종의 완벽 배합으로 치석 걱정 끝!</span>
-            <div class="box_mini">
-                <div class="mini">#치석예방</div>
-                <div class="mini">#바르기 편한 맞춤 체형</div>
-                <div class="mini">#기호성 높은 멜론 향</div>
-                <div class="mini">#잇몸 건강 증진</div>
-            </div>
-            <figure><img src="../과제/img/dog.png"></figure>        
-        </div>
-    </section>
-    
-    <section id="visual04">
-        <div class="container">
-            <p>characters</p>
-            <h2>룸메이트 소개</h3>
-            <div class="chi">
-                <figure>
-                    <img src="./img/main-img04.png">
-                </figure>
-                <h3>알레스 / 치즈태비</h3>
-                <p>B-day 4/12</p>
-                <p>다른 치즈 태비들과는 다르게 무늬가 없어서 불만이 늘 많고 염세적인 고양이.
-                    매우 깔끔해서 하루의 마무리를 목욕으로 하지 않으면 다음날까지 화가 나 있는데, 풀어주기가 매우 힘들다.
-                    그렇지만 사소한 것에도 쉽게 만족하고 기뻐하는 굉장히 감정적인 고양이다.</p>
-            </div>
-            
-            <div class="boss">
-                <figure>
-                    <img src="./img/main-img05.png">
-                </figure>
-                <h3>보스/리트리버</h3>
-                <p>B-day 6/14</p>
-                <p>이름은 보스지만 순둥이의 얼굴을 하고 있다. 대체적으로 착하지만 그 착함이 몸에 배어서 기계적으로 착하게 행동할 때가 있다.
-                    그래서 가끔은 속을 모르겠는 강아지. 식탐이 너무 많아서 아무거나 다 주워 먹지만 한 번도 탈이 난 적 없는 축복받은 위장을 갖고 있다.</p>
-            </div>
+#header .container {display:flex;justify-content:space-between;width:1200px;height:100px;
+margin:0 auto;padding:30px 0;margin-bottom:10px;
+position:relative;}
+#header h1 img {max-width:136px;max-height:64px;position:absolute;top:50%;left:0;transform:translateY(-50%)}
 
-            <div class="chal">
-                <figure>
-                    <img src="./img/main-img05.png">
-                </figure>
-                <h3>찰리/아프간하운드</h3>
-                <p>B-day 7/12</p>
-                <p>새침하고 까탈스러운 성격의 찰리는 과거 영국 귀족의 반려견이었던 조상의 피를 이어받아 고급진 취향을 가지고 있어서 뭐든지 최고가 아니면 취급하지 않는다.
-                    몸을 가꾸는 것을 좋아하고 특히 찰랑거리는 머릿결에 집착해서 목욕하는 데 매우 오래 걸린다. 항상 집을 어지럽히는 보스와 알렉스를 한심하게 바라본다.</p>
-            </div>
+/* 페스룸 로고 */
 
-            <div class="boss">
-                <figure>
-                    <img src="./img/main-img05.png">
-                </figure>
-                <h3>에릭//봄페이</h3>
-                <p>B-day 10/11</p>
-                <p>항상 밝고 장난기 많은 에릭. 성격이 우호적이어서 어떤 환경에도 잘 적응하며 이웃들의 기분을 잘 알아차린다.
-                    다른 이웃들이 우울해 하는 것을 못보는 에릭은 난처하거나 도움이 필요할 때를 대비해 항상 이것저것 챙겨서 언제 어디서든 나타나 도움을 주고 분위기를 밝게 만들어준다.</p>
-            </div>
+#header .list {border-top:1px solid #dddddd;}
+#header .list nav>ul {display:flex;justify-content:center;width:1200px;margin:0 auto;padding:0 15px;}
+#header .list nav>ul>li>a {text-align:center;padding:0 20px;line-height:50px;position:relative;}
+#header .list nav>ul>li~li>a:before {content:"";display:block;width:1px;height:12px;
+background:#dddddd;position:absolute;top:50%;left:0%;transform:translateY(-50%);}
 
-        </div>
+/* 대메뉴 */
 
-    </main>
-</body>
-</html>
+#header .blank {display:block;width:315px;}
+
+#header .header_search input {display:flex;border: #062f87 1px solid;width:540px;height:30px;border-radius:15px;
+    position:relative;margin:0 auto;margin-left:0;padding:0 10px;}
+/*#header .header_search {display:flex;border: #062f87 1px solid;width:540px;height:30px;border-radius:15px;
+position:relative;margin:0 auto;margin-left:0;z-index:999;}*/
+#header .header_search button {background:none;border:none;color: #062f87;font-size:28px;position:absolute;
+top:50%;left:85%;transform:translate(-350%,-75%);}
+#header .header_search button:hover {cursor:pointer;}
+
+#header .icon ul {display:flex;color: #062f87;float:right;}
+#header .icon i {font-size:26px;margin-right:15px;}
+
+#main_visual {position:relative;}
+#main_visual figure {position:relative;height:600px;}
+#main_visual .itm01 {background:url(../img/visual01.png)no-repeat center center/cover;}
+#main_visual .itm02 {background:url(../img/visual02.png)no-repeat center center/cover;}
+#main_visual .itm03 {background:url(../img/visual03.png)no-repeat center center/cover;}
+
+#main_visual .main_btn i {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:36px;cursor:pointer;color:#fff;}
+#main_visual .main_btn i.xi-angle-left {margin-left:-600px;}
+#main_visual .main_btn i.xi-angle-right {margin-left:600px;}
+
+#visual01 {background:#f7f7f7;margin-top:150px;padding:50px 0 100px 0;height:800px;}
+#visual01 .main_text {text-align:center;position:relative;}
+#visual01 .main_text h2 {margin-bottom:15px;}
+#visual01 .main_text p {font-family:'neon';font-size:24px;margin-bottom:70px;}
+#visual01 .container {display:flex;width:1200px;margin:0 auto;text-align:center;color:#fff;}
+/* 1단 타이틀 */
+
+/* 1단 내용 */
+#visual01 .container figure img {width:380px;}
+#visual01 .teim1 {padding:0 0 15px 0;margin-right:30px;background:#062f87;position:relative;}
+#visual01 .discount {position:absolute;width:70px;padding:2px 0;background:#062f87;border-radius:5px;font-size:14px;}
+
+/* 1단 옵션 */
+#visual01 .teim2 {padding:0 0 15px 0;background:#062f87;position:relative;}
+#visual01 .deve {position:absolute;background:#f00;padding:2px 0;width:70px;
+border-radius:5px;font-size:14px;left:80px;}
+/* 1단 내용 */
+
+#visual01 .container h3 {font-weight:400;padding:10px 0;}
+#visual01 .container p {font-size:13px;font-weight:100;text-decoration:line-through;margin-bottom:10px;}
+#visual01 .imtext {font-size:18px;color:#fdc743;}
+/* 1단 내용 */
+
+#visual02 .container {display:flex;margin:0 auto;padding:200px 0;width:1200px;}
+
+/* 3단 내용 */
+#visual03 {background:#fdc743;}
+#visual03 .container {width:1200px;margin:0 auto;height:200px;padding:15px 0;position:relative;}
+#visual03 .box_mini {display:flex;color:#fff;}
+#visual03 .container figure {position:absolute;top:50%;right:0;transform:translateY(-50%);}
+#visual03 .container figure img {max-width:80%;max-height:80%;}
+
+#visual03 .container p {padding:20px 0 0 0;}
+#visual03 .container span {font-weight:500;}
+#visual03 .container h3 {font-family:'neon';font-size:24px;margin:10px 0;}
+#visual03 .container ul>li {flex:1;background:;}
+#visual03 .mini {background:#062f87;margin:20px 15px 0 0;padding:5px 10px;border-radius:3px;}
+#visual03 img {margin-right:0 auto}
+/* 3단 내용 */
