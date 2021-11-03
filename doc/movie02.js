@@ -2,7 +2,7 @@ $(function(){
     //-------------------------------------------
 
         $('#bgndVideo').YTPlayer({
-            videoURL:'https://www.youtube.com/embed/dvIP3piTChc',
+            videoURL:'https://www.youtube.com/embed/ZWMYOPsapTk',
             containment:'#visual',
             autoPlay:true, 
             mute:true, 
@@ -23,7 +23,7 @@ $(function(){
     
     
         $('#mv01').YTPlayer({
-            videoURL:'https://www.youtube.com/embed/dvIP3piTChc',
+            videoURL:'https://www.youtube.com/embed/ZWMYOPsapTk',
             containment:'self',
             autoPlay:true, 
             mute:true, 
