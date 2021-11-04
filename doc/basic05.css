@@ -136,3 +136,4 @@ margin:20px auto;}
 #footer .customer_link li:first-child a {padding:0 20px 0 0;}
 #footer hr {border:none;border-top:1px solid #666;}
 #footer .sns {font-size:30px;}
+#footer select {background:#333;padding:0 15px;line-height:30px;outline:none;}

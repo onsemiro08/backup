@@ -57,6 +57,14 @@ $('#product04 .container .con i.xi-arrow-left').on('click',function(){
         $('.ps_slider02').slick('slickNext');
     });
 
+$('#link select').on('change',function(){
+    var link=$(this).val();
+    if(link) window.open(link)
+});
+
+
+
+
 // function topBannerClose(){
 // $('#top_banner').hide();
 // }
