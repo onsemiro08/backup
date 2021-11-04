@@ -115,8 +115,8 @@ margin:20px auto;}
 #product04 .container .con figure {padding:0 15px;}
 #product04 .container .con img {max-width:100%;}
 #product04 .container .con i {position:absolute;top:50%;background:#fff;padding:10px;border:1px solid #ddd;}
-#product04 .container .con i.xi-arrow-left {left:0;}
-#product04 .container .con i.xi-arrow-right {right:0;}
+#product04 .container .con i.xi-arrow-left {left:0;transform:translateY(-120%);}
+#product04 .container .con i.xi-arrow-right {right:0;transform:translateY(-120%);}
 
 #product04 .dis h3 {font-size:24px;font-weight:500;margin-bottom:10px;}
 #product04 .dis h3:after {content:"";display:block;width:1px;height:40px;background:#fe5500;
