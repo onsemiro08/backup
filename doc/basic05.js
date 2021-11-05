@@ -48,6 +48,7 @@ $('.ps_slider02').slick({
     autoplaySpeed:2000,
     pauseOnhover:false,
     pauseOnFocus:false,
+    infinite:true,
 });
 
 $('#product04 .container .con i.xi-arrow-left').on('click',function(){
@@ -62,8 +63,19 @@ $('#link select').on('change',function(){
     if(link) window.open(link)
 });
 
+$('.tab_menu li').on('click',function(){
+    var idx=$(this).index();
+//    $('.tab_con>div').eq(idx).show().siblings().hide();//
+    $('.tab_con>div').eq(idx).addClass('on').siblings().removeClass('on');
+});
 
-
+$('.tab_slider').slick({
+    arrows:false,
+    slidesToShow:4,
+    autoplay:true,
+    autoplaySpeed:2000,
+    centerMode:true,
+});
 
 // function topBannerClose(){
 // $('#top_banner').hide();
