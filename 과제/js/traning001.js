@@ -9,6 +9,10 @@ $(function(){
         arrows:false,
         autoplay:true,
         pauseOnHover:false,
+        autoplaySpeed:3000,
+        pauseOnhover:false,
+        pauseOnFocus:false,
+        infinite:true,
     });
 
     // 기본 슬라이드 (자동으로 넘어감)
@@ -23,4 +27,11 @@ $(function(){
 
     // 앞뒤 버튼 작동
 
+    $('#visual04 .container').slick({
+        slidesToShow: 3, // 슬라이드 쇼 몇 개 돌아갈 지, 돌아가는 예비 복사해둬야 함
+        arrows:false,
+        autoplay:true,
+        dots:true, // 버튼 리스트 생성
+
     });
+});
