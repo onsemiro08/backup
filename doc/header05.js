@@ -32,10 +32,10 @@ $('.pr_slider').slick({
         autoplay:true,
         dots:true, // 버튼 리스트 생성
     });
-$('#content01 .btn i.xi-arrow-left').on('click', function(){
+$('.xe i.xi-arrow-left').on('click', function(){
     $('.pr_slider').slick('slickPrev');
 });    
-$('#content01 .btn i.xi-arrow-right').on('click', function(){
+$('.xe i.xi-arrow-right').on('click', function(){
     $('.pr_slider').slick('slickNext');
 });
 //----------------------------
