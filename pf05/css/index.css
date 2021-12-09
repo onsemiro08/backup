@@ -1,0 +1,40 @@
+*{outline:1px solid #f00;}
+.wrap {min-width:95rem;}
+html {font-size:20px;}
+body {font-size:0.8rem;}
+
+.container {display:flex;width:60rem;margin:0 auto;}
+
+/* --------------------------------- 상단 열닫 메뉴 --------------------------------- */
+
+.top_banner {background:#0a4484;color:#fff;position:relative;padding:0.2rem 0;}
+.top_banner .case {display:flex;height:3.5rem;overflow:hidden;margin:0 auto;transition:0.4s;}
+.top_banner .case.on {height:0;}
+
+.top_banner .case .container {width:60rem;justify-content:space-between;margin:1rem auto;}
+.top_banner .btn {position:absolute;bottom:-1.2rem;left:50%;transform:translateX(-50%);text-align:right;
+    width:60rem;z-index:2;}
+.top_banner .btn i {padding:0.15rem 0.5rem;background:#0a4484;border-radius:0 0 5px 5px;}
+.top_banner .btn i::after {content:"close";}
+.top_banner .btn i.on::after {content:"open";}
+
+/* --------------------------------- 메뉴  --------------------------------- */
+
+.header {margin-top:2.4rem;}
+.header .logo h1 {text-align:center;padding:0 3rem;}
+.header .logo img {width:7rem;}
+
+.gnb {display:flex;}
+.gnb ul {display:flex;line-height:3rem;font-size:1rem;font-weight:500;}
+.gnb ul>li {justify-content:space-between;}
+.gnb ul>li>a {padding:0.5rem 2.4rem;}
+
+.popup {/*display:; *숨기기*/position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.6);}
+.popmenu {width:60rem;margin:0 auto;background:#fff;}
+.popmenu .container {display:flex;background:#fff;padding:1rem;}
+.popmenu .container dl {flex:1;text-align:center;}
+.popmenu .container dl>dt {font-size:0.9rem;font-weight:700;padding:0.75rem 0;}
+.popmenu .container dl>dd {padding:0.5rem 0;}
+/* ---------------------------------  --------------------------------- */
+
+.mopen {display:none;}
