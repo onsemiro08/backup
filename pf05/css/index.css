@@ -1,4 +1,4 @@
-*{outline:1px solid #f00;}
+/*{outline:1px solid #f00;}*/
 .wrap {min-width:95rem;}
 html {font-size:20px;}
 body {font-size:0.8rem;}
@@ -12,29 +12,58 @@ body {font-size:0.8rem;}
 .top_banner .case.on {height:0;}
 
 .top_banner .case .container {width:60rem;justify-content:space-between;margin:1rem auto;}
-.top_banner .btn {position:absolute;bottom:-1.2rem;left:50%;transform:translateX(-50%);text-align:right;
-    width:60rem;z-index:2;}
-.top_banner .btn i {padding:0.15rem 0.5rem;background:#0a4484;border-radius:0 0 5px 5px;}
+.top_banner .btn {position:absolute;bottom:-1rem;left:50%;transform:translateX(-50%);text-align:right;
+    width:60rem;z-index:1;}
+.top_banner .btn i {padding:0.15rem 0.5rem;background:#0a4484;border-radius:0 0 5px 5px;line-height:1rem;font-size:0.7rem;cursor:pointer;}
 .top_banner .btn i::after {content:"close";}
 .top_banner .btn i.on::after {content:"open";}
 
 /* --------------------------------- 메뉴  --------------------------------- */
 
-.header {margin-top:2.4rem;}
-.header .logo h1 {text-align:center;padding:0 3rem;}
-.header .logo img {width:7rem;}
+.header {margin-top:2.4rem;position: relative;}
 
-.gnb {display:flex;}
-.gnb ul {display:flex;line-height:3rem;font-size:1rem;font-weight:500;}
-.gnb ul>li {justify-content:space-between;}
-.gnb ul>li>a {padding:0.5rem 2.4rem;}
+/* 1단 메뉴 */
 
-.popup {/*display:; *숨기기*/position:fixed;width:100%;height:100%;background:rgba(0,0,0,0.6);}
-.popmenu {width:60rem;margin:0 auto;background:#fff;}
-.popmenu .container {display:flex;background:#fff;padding:1rem;}
+.header .container .logo {position:absolute;bottom:25%;left:50%;transform:translateX(-50%);}
+.header .container .logo img {width:7rem;}
+.header .container .icon ul {display:flex;}
+.header .icon {display:flex;width:100%;position:relative;font-size:0.75rem;}
+.header .icon .right {width:50%;}
+.header .icon .right ul {justify-content:right;}
+.header .icon .right ul>li {padding:1rem 0.5rem 0.75rem;}
+.header .icon .left {width:50%;}
+.header .icon .left ul>li {padding:1rem 0.5rem 0.75rem;}
+
+/* 2단 메뉴 */
+
+
+.stroke {border-top:1px solid #ddd;border-bottom:1px solid #ddd;}
+.stroke .container {justify-content:center;}
+.gnb ul {display:flex;font-size:1rem;font-weight:500;}
+.gnb ul>li {}
+.gnb ul>li~li>a::after {content:"";display:block;width:1px;height:0.75rem;background:#ddd;top:50%;left:0;transform:translate(-50%,-50%);position:absolute;}
+.gnb ul>li>a {display:block;padding:1rem 1.5rem;position:relative;}
+
+/* 전체 메뉴 팝업 */
+
+.popup {display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:2;}
+.popup h2 {text-align:center;font-size:1.5rem;font-weight:700;padding:1.25rem 0;}
+.popmenu {width:60rem;margin:5rem auto;background:#fff;position:relative;}
+.popmenu .container {display:flex;background:#fff;padding:0 2rem 2rem 2rem;}
 .popmenu .container dl {flex:1;text-align:center;}
 .popmenu .container dl>dt {font-size:0.9rem;font-weight:700;padding:0.75rem 0;}
 .popmenu .container dl>dd {padding:0.5rem 0;}
-/* ---------------------------------  --------------------------------- */
+.popmenu .container dl>dd:hover {color:#f00;}
+.popmenu i {position:absolute;top:1.5%;right:0.75%;font-size:1.2rem;color:#0a4484;}
+
+/* --------------------------------- 메인 슬라이드 --------------------------------- */
+
+.main_slider .main01 {background:url(../img/meadow-g4a8bb242e_1920.jpg) no-repeat top center/cover;width:100%;height:35rem;overflow:hidden;}
+.main_slider .main02 {background:url(../img/meadow-g4a8bb242e_1920.jpg) no-repeat top center/cover;width:100%;height:35rem;overflow:hidden;}
+.main_slider .main03 {background:url(../img/meadow-g4a8bb242e_1920.jpg) no-repeat top center/cover;width:100%;height:35rem;overflow:hidden;}
+
+
+
+footer {}
 
 .mopen {display:none;}
