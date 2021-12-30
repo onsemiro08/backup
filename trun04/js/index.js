@@ -26,7 +26,6 @@ $('.pr_slider').slick({
     slidesToShow:3,
     pauseOnHover:false,
     pauseOnFocus:false,
-    dots:true,
     centerPadding:"2rem",
 });
 
