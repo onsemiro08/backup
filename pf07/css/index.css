@@ -1,0 +1,73 @@
+*{outline:1px solid #f00;}*/
+.wrap {min-width:95rem;}
+html {font-size:20px;}
+body {font-size:0.8rem;}
+
+.container {display:flex;width:60rem;margin:0 auto;padding:0 0.75rem;}
+.container_ {width:60rem;margin:0 auto;}
+.m_br {display:none;}
+
+/* ----------------------------------------- 메인 배너 -----------------------------------------  */
+
+.top_benner {display:flex;line-height:2.1;width:100%;border-bottom:1px solid #ddd;}
+.top_benner .left {width:50%;}
+.top_benner .left ul {display:flex;}
+.top_benner .right {width:50%;}
+.top_benner .right ul {display:flex;justify-content:right;}
+.top_benner .right ul>li {padding-left:0.75rem;}
+
+/* ----------------------------------------- 메인 배너 -----------------------------------------  */
+
+.bottom_banner {line-height:3.6;}
+.bottom_banner .left img {width:10rem;padding:1rem 0;}
+.bottom_banner .left {margin-right:2rem;}
+
+.bottom_banner .right {width:100%;}
+.bottom_banner .right .gnb {background:#ff0;}
+.bottom_banner .menu_title {float:left;font-size:1rem;font-weight:400;z-index:999;}
+.bottom_banner .right .menu_title>li {position:relative;float:left;width:6.03rem;text-align:center;}
+
+.bottom_banner .right .menu_title ul {display:none;line-height:2.2;}
+.bottom_banner .right .menu_title li:hover .deep01 {display:block;}
+.bottom_banner .right .deep01 {position:absolute;left:0rem;top:3.8rem;}
+.bottom_banner .right .deep01>li {width:11rem;padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
+.bottom_banner .right .deep01>li:hover .deep02 {display:block;}
+
+.bottom_banner .right .deep02 {position:absolute;top:0;left:11.11rem;width:12rem;}
+.bottom_banner .right .deep02>li {padding:0 1.5rem;}
+
+/*------------------------ menu_title 메뉴1, deep01 소메뉴, depp02 2단 소메뉴 ------------------------*/
+/*------------------------ 강좌에서는 main1 메뉴1, main2 소메뉴, main3 2단 소메뉴 ------------------------*/
+
+/* ----------------------------------------- 1단 슬라이드 -----------------------------------------  */
+
+.main_slider {width:100%;height:40rem;background:#ddd;position:relative;z-index:-1;}
+
+.popup {width:100%;position:absolute;bottom:0;left:50%;transform:translate(-50%,-50%);background:#ff0;z-index:-1;}
+.popup .container_ {width:60rem;height:12rem;position: relative;}
+.popup .container_ ul {display:flex;}
+.popup .container_ .left {background:#f00;width:30rem;height:12rem;}
+.popup .container_ .right {background:blue;width:30rem;height:12rem;}
+.popup i {position:absolute;top:0.75rem;right:0.75rem;cursor:pointer;font-size:1rem;}
+
+/* ----------------------------------------- 푸터 -----------------------------------------  */
+
+.mopen {display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------- 여기서부터 반응형 -----------------------------------------  */
