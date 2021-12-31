@@ -1,0 +1,143 @@
+*{outline:1px solid #f00;}*/
+.wrap {min-width:95rem;}
+html {font-size:20px;}
+body {font-size:0.8rem;}
+
+.container {display:flex;width:60rem;margin:0 auto;padding:0 0.75rem;}
+.container_ {width:60rem;margin:0 auto;}
+.m_br {display:none;}
+
+/* ----------------------------------------- 메인 배너 -----------------------------------------  */
+
+.top_benner {display:flex;line-height:2.1;width:100%;border-bottom:1px solid #f1f1f1;}
+.top_benner .left {width:50%;}
+.top_benner .left ul {display:flex;}
+.top_benner .right {width:50%;}
+.top_benner .right ul {display:flex;justify-content:right;}
+.top_benner .right ul>li {padding-left:0.75rem;}
+
+/* ----------------------------------------- 메인 배너 -----------------------------------------  */
+
+.bottom_banner {line-height:4;}
+.bottom_banner .left img {width:10rem;padding:1.2rem 0;}
+.bottom_banner .left {margin-right:2rem;}
+
+.bottom_banner .right {width:100%;}
+.bottom_banner .right .gnb {background:#ff0;}
+.bottom_banner .menu_title {float:left;font-size:1rem;font-weight:400;z-index:999;}
+.bottom_banner .right .menu_title>li {position:relative;float:left;width:6.03rem;text-align:center;}
+
+.bottom_banner .right .menu_title ul {display:none;line-height:2.2;}
+.bottom_banner .right .menu_title li:hover .deep01 {display:block;}
+.bottom_banner .right .deep01 {position:absolute;left:0rem;top:3.8rem;}
+.bottom_banner .right .deep01>li {width:11rem;padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
+.bottom_banner .right .deep01>li:hover .deep02 {display:block;}
+
+.bottom_banner .right .deep02 {position:absolute;top:0;left:11.11rem;width:12rem;z-index:1000;}
+.bottom_banner .right .deep02>li {padding:0 1.5rem;z-index:1000;}
+
+/*------------------------ menu_title 메뉴1, deep01 소메뉴, depp02 2단 소메뉴 ------------------------*/
+/*------------------------ 강좌에서는 main1 메뉴1, main2 소메뉴, main3 2단 소메뉴 ------------------------*/
+
+/* ----------------------------------------- 1단 슬라이드 -----------------------------------------  */
+
+.main_slider {width:100%;height:calc(100vh - 15rem);background:#ddd;position:relative;z-index:-1;}
+
+.popup {display:block;width:100%;position:absolute;bottom:3.8rem;left:50%;transform:translate(-50%,-50%);background:#999;z-index:0;height:11rem;}
+.popup.on {display:none;}
+.popup .container {position:relative;color:#fff;}
+.popup .container .flex {display:flex;}
+.popup .container .left {background:#999;width:30rem;height:11rem;padding:2rem 3rem;}
+.popup .container .left .case {display:flex;align-items:center;}
+.popup .container .left .case h3 {font-size:1rem;font-weight:500;line-height:1.2rem;padding-bottom:0.25rem;}
+.popup .container .left .case p {line-height:1.2rem;padding-bottom:0.3rem;}
+.popup .container .left .case .p_01 {display:block;width:5rem;height:5rem;margin-right:2rem;text-indent:-9999rem;border-radius:50%;
+    background:url(../img/ccu30_signature_ke2.jpg);}
+
+.popup .container .right {width:30rem;height:12rem;padding:2rem 3rem;}
+.popup .container .right .case {display:flex;align-items:center;}
+.popup .container .right .case h3 {font-size:1rem;font-weight:500;line-height:1.2rem;padding-bottom:0.25rem;}
+.popup .container .right .case .p_02 {display:block;width:5rem;height:5rem;margin-right:2rem;text-indent:-9999rem;border-radius:50%;
+    background:url(../img/ccu30_signature_ke2.jpg);}
+.popup .container .right .case p {line-height:1.2rem;padding-bottom:0.3rem;}
+.popup .container .right {background:#999;width:30rem;height:11rem;}
+.popup i {cursor:pointer;font-size:1rem;color:#fff;}
+
+.popup .left a {display:block;}
+.popup .left span {display:inline-block;width:0;overflow:hidden;white-space:nowrap;transition:0.5s;}
+.popup .left:hover span {width:5rem;}
+
+.popup .right a {display:block;}
+.popup .right span {display:inline-block;width:0;overflow:hidden;white-space:nowrap;transition:0.5s;}
+.popup .right:hover span {width:5rem;}
+
+.p_slider .slick-dots {position:absolute;bottom:1.5rem;left:0;width:100%;text-align:center;z-index:1;}
+.p_slider .slick-dots li {display:inline-block;width:0.5rem;height:0.5rem;background:#fff;overflow:hidden;margin:0 0.3rem;border-radius:50%;}
+.main_slider .slick-dots li button {display:none;}
+
+.p_slider .slick-dots li::after {content:"";display:block;width:0;height:100%;background:#2573c5;}
+.p_slider .slick-dots li.slick-active:after {width:100%;transition:3s;}
+
+
+/* ----------------------------------------- 빠른 메뉴 -----------------------------------------  */
+
+.quick_menu {}
+.quick_menu .container ul {display:flex;}
+.quick_menu .container ul>li {width:6.5rem;padding:0 0.75rem;text-align:center;}
+.quick_menu .container ul>li i {font-size:3rem;padding:1.5rem 0 1rem 0;}
+.quick_menu .container ul>li p {font-size:0.85rem;font-weight:400;padding-bottom:1.3rem;}
+
+.canlendar {background:#ddd;width:100%;height:20rem;}
+
+
+/* ----------------------------------------- 2단 달력 -----------------------------------------  */
+
+.canlendar {position: relative;}
+.canlendar .txt {padding:3rem 0;text-align:center;}
+.canlendar .txt p {font-size:1rem;font-weight:300;margin-bottom:0.8rem;}
+.canlendar .txt h2 {font-size:1.5rem;font-weight:400;}
+.canlendar .txt span {font-weight:700;}
+.canlendar .txt strong {font-weight:500;}
+.canlendar h4 {font-size:0.9rem;padding:0.75rem 0;}
+.canlendar .img p {line-height:1.3;}
+
+.canlendar .container {background:#fff;height:30rem;position:absolute;top:120%;left:50%;transform:translate(-50%,-50%);}
+.canlendar .container h3 {font-size:1.2rem;margin-bottom:1.5rem;}
+.canlendar .container i {float:right;}
+.canlendar .left {width:70%;padding:2rem 1rem;}
+.canlendar .left figure {width:48.1%;}
+.canlendar .left .img {display:flex;}
+.canlendar .left .img .left_figure {margin-right:1.5rem;}
+.canlendar .right {width:30%;padding:2rem 1rem;}
+
+.canlendar .right_figure h4 {display:block;width:90%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.canlendar .img p {display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+/* ----------------------------------------- 푸터 -----------------------------------------  */
+
+.scroll_banner ul {position:fixed;top:30%;right:8rem;}
+.scroll_banner ul>li {background:#666;border-radius:50%;width:3rem;height:3rem;line-height:3rem;text-align:center;margin-top:1rem;}
+
+/* ----------------------------------------- 푸터 -----------------------------------------  */
+
+
+
+.mopen {display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------- 여기서부터 반응형 -----------------------------------------  */
