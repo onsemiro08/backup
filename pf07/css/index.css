@@ -1,7 +1,19 @@
-*{outline:1px solid #f00;}*/
+/*{outline:1px solid #f00;}*/
 .wrap {min-width:95rem;}
 html {font-size:20px;}
 body {font-size:0.8rem;}
+
+:root {
+    --mc:#FAAE67;
+    --sc:#D65490;
+    --lc:#fff;
+    --dc:#444444;
+    --dd:#ddd;
+}
+
+@font-face { font-family: 'Material Icons'; font-style: normal; font-weight: 400; src: url(path/to/MaterialIcons-Regular.eot); /* For IE6-8 */ src: local('Material Icons'), local('MaterialIcons-Regular'), url(path/to/MaterialIcons-Regular.woff2) format('woff2'), url(path/to/MaterialIcons-Regular.woff) format('woff'), url(path/to/MaterialIcons-Regular.ttf) format('truetype'); }
+
+.material-icons { font-family: 'Material Icons'; font-weight: normal; font-style: normal; font-size: 24px; /* Preferred icon size */ display: inline-block; line-height: 1; text-transform: none; letter-spacing: normal; word-wrap: normal; white-space: nowrap; direction: ltr; /* Support for all WebKit browsers. */ -webkit-font-smoothing: antialiased; /* Support for Safari and Chrome. */ text-rendering: optimizeLegibility; /* Support for Firefox. */ -moz-osx-font-smoothing: grayscale; /* Support for IE. */ font-feature-settings: 'liga'; }
 
 .container {display:flex;width:60rem;margin:0 auto;padding:0 0.75rem;}
 .container_ {width:60rem;margin:0 auto;}
@@ -29,11 +41,11 @@ body {font-size:0.8rem;}
 
 .bottom_banner .right .menu_title ul {display:none;line-height:2.2;}
 .bottom_banner .right .menu_title li:hover .deep01 {display:block;}
-.bottom_banner .right .deep01 {position:absolute;left:0rem;top:3.8rem;}
+.bottom_banner .right .deep01 {position:absolute;left:0rem;top:3.8rem;z-index:999;background:var(--dd);}
 .bottom_banner .right .deep01>li {width:11rem;padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
 .bottom_banner .right .deep01>li:hover .deep02 {display:block;}
 
-.bottom_banner .right .deep02 {position:absolute;top:0;left:11.11rem;width:12rem;z-index:1000;}
+.bottom_banner .right .deep02 {position:absolute;top:0;left:11.11rem;width:12rem;z-index:1000;background:var(--lc);}
 .bottom_banner .right .deep02>li {padding:0 1.5rem;z-index:1000;}
 
 /*------------------------ menu_title 메뉴1, deep01 소메뉴, depp02 2단 소메뉴 ------------------------*/
@@ -53,7 +65,7 @@ body {font-size:0.8rem;}
 .popup .container .left .case p {line-height:1.2rem;padding-bottom:0.3rem;}
 .popup .container .left .case .p_01 {display:block;width:5rem;height:5rem;margin-right:2rem;text-indent:-9999rem;border-radius:50%;
     background:url(../img/ccu30_signature_ke2.jpg);}
-.popup i {position:absolute;top:6%;right:1%;color:#fff;}
+.popup i.xi-close {position:absolute;top:6%;right:1%;color:#fff;font-size:1.2rem;}
 
 .popup .container .right {width:30rem;height:12rem;padding:2rem 3rem;}
 .popup .container .right .case {display:flex;align-items:center;}
@@ -62,7 +74,7 @@ body {font-size:0.8rem;}
     background:url(../img/ccu30_signature_ke2.jpg);}
 .popup .container .right .case p {line-height:1.2rem;padding-bottom:0.3rem;}
 .popup .container .right {background:#999;width:30rem;height:11rem;}
-.popup i {cursor:pointer;font-size:1rem;color:#fff;}
+.popup .flex i {cursor:pointer;font-size:1rem;color:#fff;}
 
 .popup .left a {display:block;}
 .popup .left span {display:inline-block;width:0;overflow:hidden;white-space:nowrap;transition:0.5s;}
@@ -85,8 +97,8 @@ body {font-size:0.8rem;}
 .quick_menu {}
 .quick_menu .container ul {display:flex;}
 .quick_menu .container ul>li {width:6.5rem;padding:0 0.75rem;text-align:center;}
-.quick_menu .container ul>li i {font-size:3rem;padding:1.5rem 0 1rem 0;}
-.quick_menu .container ul>li p {font-size:0.85rem;font-weight:400;padding-bottom:1.3rem;}
+.quick_menu .container ul>li i {font-size:1.5rem;margin:1.5rem 0;}
+.quick_menu .container ul>li p {font-size:0.85rem;font-weight:400;padding-bottom:1.5rem;}
 
 
 
@@ -104,10 +116,13 @@ body {font-size:0.8rem;}
 .canlendar .container {background:#fff;position:absolute;top:62%;left:50%;transform:translate(-50%,-50%);border-bottom:1px solid #ddd;}
 .canlendar .container h3 {font-size:1.2rem;margin-bottom:1.5rem;}
 .canlendar .container i {float:right;}
-.canlendar .left {width:70%;padding:2rem 2rem 1rem 1rem;}
-.canlendar .left figure {width:50.1%;}
+
+.canlendar .left {width:70%;padding:2rem 1rem 1rem 1rem;}
+.canlendar .left figure {width:48%;}
 .canlendar .left .img {display:flex;}
 .canlendar .left .img .left_figure {margin-right:1.5rem;}
+.canlendar .container .left:hover {rotate:(90deg);}
+
 .canlendar .right {width:30%;padding:2rem 1rem 1.5rem;}
 .canlendar .container .flex {display:flex;margin:1rem 0;}
 
@@ -131,26 +146,29 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
 .customer {background:url(../img/bg02.png) no-repeat bottom center/cover;width:100%;height:20rem;position:relative;height:25rem;}
 .customer .container {background:#fff;padding:2.5rem 0.75rem;position:absolute;top:0;left:50%;transform:translateX(-50%);}
-.customer .left {width:50%;padding:0 1rem;}
+.customer .left {width:48%;padding:0 1rem;}
 .customer .left>ul>li {font-size:1rem;}
 .customer .left>ul>li:nth-child(2) {padding-left:1.5rem;}
 .customer .left i {float:right;}
 
 .customer .tab_menu {display:flex;width:100%;cursor:pointer;}
-.customer .tab_menu>li {color:#999;font-weight:400;margin:0 0 1rem 0;}
-.customer .tab_menu>li::after {content:"";display:none;width:4rem;height:0.15rem;background:#000;margin-top:0.6rem;}
+.customer .tab_menu>li {color:#999;font-weight:400;margin:0 0 1rem 0;opacity:0.7;}
+.customer .tab_menu>li::after {content:"";display:none;width:4rem;height:0.15rem;background:#000;margin-top:0.4rem;}
 .customer .tab_menu>li.on::after {display:block;}
-.customer .tab_menu>li.on {color:#000;font-weight:500;}
+.customer .tab_menu>li.on {color:#000;font-weight:500;opacity:1;}
+
 .customer .tab_content {position:relative;}
-.customer .tab_content .txt>li {line-height:2rem;}
-.customer .tab_content .txt>li span {display:inline-block;width:70%;white-space:nowrap;overflow:hidden;
-text-overflow:ellipsis;}
-.customer .tab_content .txt>li a {line-height:2rem;padding-bottom:0.4rem;}
+
+.customer .tab_content .on ul>li a::after {content:"";display:block;position:absolute;top:0;top:0;width:100%;height:0.1rem;background:var(--dc);}
+.customer .tab_content .on ul>li a {position:relative;}
+.customer .tab_content .txt>li a {display:block;overflow:hidden;}
+.customer .tab_content .txt>li strong {display:block;float:right;font-size:0.7rem;line-height:2rem;}
+.customer .tab_content .txt>li span {display:block;float:left;width:80%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;line-height:2rem;}
 .customer .tab_content>div {visibility:hidden;position:absolute;top:0;left:0;width:100%;height:100%;}
 .customer .tab_content>div.on {visibility:visible;}
 
 
-.customer .right {width:50%;padding:0 1rem;}
+.customer .right {width:48%;padding:0 1rem;}
 .customer .right .con01 {background:url(../img/news01.jpg) no-repeat center center/cover;width:100%;height:15rem;}
 .customer .right .con02 {background:url(../img/news02.jpg) no-repeat center center/cover;width:100%;height:15rem;}
 .customer .right .con03 {background:url(../img/news01.jpg) no-repeat center center/cover;width:100%;height:15rem;}
@@ -160,7 +178,7 @@ text-overflow:ellipsis;}
 .n_slider .slick-dots li {display:inline-block;width:0.5rem;height:0.5rem;background:#fff;overflow:hidden;margin:0 0.3rem;border-radius:50%;}
 .n_slider .slick-dots li button {display:none;}
 
-.n_slider .slick-dots li::after {content:"";display:block;width:0;height:100%;background:#2573c5;}
+.n_slider .slick-dots li::after {content:"";display:block;width:0;height:100%;background:transparent;}
 .n_slider .slick-dots li.slick-active:after {width:100%;border:1px solid #000;border-radius:50%;}
 
 
@@ -169,12 +187,22 @@ text-overflow:ellipsis;}
 .history {text-align:center;margin:3rem 0;}
 .history h2 {font-size:1.5rem;margin-bottom:0.75rem;}
 .history span {font-weight:700;}
+.history p {font-size:0.9rem;line-height:1.2rem;margin-bottom:1.5rem;}
+.history strong {font-weight:500;}
+
+.history .top {align-items:center;}
+.history .top h3 {margin-left:1rem;text-align:left;}
 
 .history .container ul {display:flex;}
 .history .container ul>li {width:390px;}
 
-.history .top {display:flex;justify-content:center;}
+.history .top {display:flex;justify-content:center;line-height:1.2;}
+.history .bottom {font-size:0.9rem;font-weight:500;margin:1rem 0;}
+.history .counter {font-size:1.8rem;font-weight:700;}
 
+/* ----------------------------------------- 푸터 -----------------------------------------  */
+
+.sns {height:10rem;background:#ddd;}
 
 /* ----------------------------------------- 푸터 -----------------------------------------  */
 
