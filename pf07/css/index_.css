@@ -112,7 +112,7 @@ body {font-size:0.8rem;}
 .canlendar .txt strong {font-weight:500;}
 .canlendar .img p {line-height:1.3;}
 
-.canlendar .container {background:#fff;position:absolute;top:62%;left:50%;transform:translate(-50%,-50%);border-bottom:1px solid #ddd;}
+.canlendar .container {background:#fff;position:absolute;top:62%;left:50%;transform:translate(-50%,-50%);}
 .canlendar .container h3 {font-size:1.2rem;margin-bottom:1.5rem;}
 .canlendar .container i {float:right;}
 
@@ -120,7 +120,6 @@ body {font-size:0.8rem;}
 .canlendar .left figure {width:48%;}
 .canlendar .left .img {display:flex;}
 .canlendar .left .img .left_figure {margin-right:1.5rem;}
-.canlendar .container .left:hover {rotate:(90deg);}
 
 .canlendar .right {width:30%;padding:2rem 1rem 1.5rem;}
 .canlendar .container .flex {display:flex;margin:1rem 0;}
@@ -241,7 +240,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 .scroll_banner ul>li {background:#666;border-radius:50%;width:3rem;height:3rem;line-height:3rem;text-align:center;margin-top:1rem;}
 
 .mopen {display:none;position:fixed;top:1.5rem;right:0.5rem;width:3rem;height:3rem;line-height:1;font-size:2rem;
-    padding:0.5rem;background:#fff;}
+    padding:0.5rem;background:#fff;z-index:1000;}
 
 
 
@@ -279,18 +278,18 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
 
 
-    @media (max-width:768px){
-
+    @media (max-width:768px)
+    {
     html {font-size:16px;}
     body {font-size:0.8rem;}
 
-    .container {display:flex;width:auto;margin:0 auto;padding:0 0.75rem;}
+    .container {display:flex;flex-flow:column;width:auto;margin:0 auto;padding:0 0.75rem;}
     .container_ {width:auto;margin:0 auto;padding:0 0.75rem;}
     .m_br {display:none;}
 
     /* ----------------------------------------- 반응형 메인 배너 -----------------------------------------  */
 
-    .top_benner {line-height:2.1;width:30rem;border-bottom:1px solid #f1f1f1;overflow:hidden;}
+    .top_benner {line-height:2.1;width:auto;border-bottom:1px solid #f1f1f1;overflow:hidden;}
     .top_benner .left {width:100%;}
     .top_benner .left ul {display:flex;}
     .top_benner .right {width:50%;}
@@ -299,31 +298,32 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
     /* ----------------------------------------- 반응형 메인 배너 -----------------------------------------  */
 
-    .bottom_banner {line-height:4;}
+    .bottom_banner {line-height:3;}
     .bottom_banner .left img {position:fixed;top:0;left:1%;width:10rem;margin:0.75rem;z-index:1000;}
     .bottom_banner .left {margin-right:1rem;}
 
-    .bottom_banner .right {width:100%;}
+    .bottom_banner .right {width:100%;position:relative;}
     .bottom_banner .right .gnb {background:#ff0;}
     nav {position:fixed;top:0;left:-100%;width:100%;height:100vh;background:#fff;border-right:1px solid #333;
     overflow:hidden;transition:0.5s;z-index:1;}
     nav.on {left:0;}
 
-    .bottom_banner .menu_title {display:flex;flex-flow:column wrap;height:100vh;padding:6rem 0;
+    .bottom_banner .menu_title {display:flex;flex-flow:column wrap;height:130vh;padding:6rem 0;
         font-size:1rem;font-weight:400;z-index:999;}
-    .bottom_banner .right .menu_title>li {position:relative;text-align:left;width:12.35rem;font-size:1.2rem;font-weight:500;
-    padding-left:2rem;}
+    .bottom_banner .right .menu_title>li {text-align:left;width:12.35rem;
+    font-size:1.2rem;font-weight:500;padding-left:2rem;}
 
-    .bottom_banner .right .menu_title ul {display:block;line-height:2.2;}
-    .bottom_banner .right .menu_title li:hover .deep01 {display:none;}
-    .bottom_banner .right .deep01 {position:absolute;left:12.1rem;top:3.8rem;z-index:999;background:var(--dd);}
-    .bottom_banner .right .deep01>li {display:none;width:100%;
-    padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
+    .bottom_banner .right .menu_title ul {display:none;line-height:1.5;}
+    .bottom_banner .right .menu_title>li.on {display:block;}
+    .bottom_banner .right .menu_title li:hover .deep01 {display:block;}
+    .bottom_banner .right .deep01 {position:absolute;left:12.5rem;top:0;z-index:999;background:var(--dd);}
+    .bottom_banner .right .deep01>li {display:block;width:15rem;
+    padding:0 1.5rem;text-align:left;font-size:1rem;position:relative;}
     .bottom_banner .right .deep01>li.on .deep02 {display:block;}
-    .bottom_banner .right .deep01>li:hover .deep02 {display:none;}
+    .bottom_banner .right .deep01>li:hover .deep02 {display:block;}
 
-    .bottom_banner .right .deep02 {display:none;position:fixed;top:0;left:11.11rem;width:12rem;z-index:1000;background:var(--lc);}
-    .bottom_banner .right .deep02>li {display:none;padding:0 1.5rem;z-index:1000;}
+    .bottom_banner .right .deep02 {display:block;position:static;top:0;left:11.11rem;width:100%;z-index:1000;background:var(--lc);}
+    .bottom_banner .right .deep02>li {display:block;padding:0;z-index:1000;}
 
     /*------------------------ menu_title 메뉴1, deep01 소메뉴, depp02 2단 소메뉴 ------------------------*/
     /*------------------------ 강좌에서는 main1 메뉴1, main2 소메뉴, main3 2단 소메뉴 ------------------------*/
@@ -372,7 +372,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
     /* ----------------------------------------- 반응형 빠른 메뉴 -----------------------------------------  */
 
     .quick_menu .container ul {display:flex;flex-wrap:wrap;}
-    .quick_menu .container ul>li {width:6.5rem;padding:0 0.75rem;text-align:center;}
+    .quick_menu .container ul>li {display:flex;flex-wrap:wrap;width:6.5rem;padding:0 0.75rem;text-align:center;}
     .quick_menu .container ul>li i {font-size:1.5rem;margin:1.5rem 0;}
     .quick_menu .container ul>li p {font-size:0.85rem;font-weight:400;padding-bottom:1.5rem;}
 
@@ -389,7 +389,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
     .canlendar .txt strong {font-weight:500;}
     .canlendar .img p {line-height:1.3;}
 
-    .canlendar .container {background:#fff;position:absolute;top:62%;left:50%;transform:translate(-50%,-50%);border-bottom:1px solid #ddd;}
+    .canlendar .container {background:#fff;position:static;top:62%;left:50%;transform:translate(-50%,-50%);border-bottom:1px solid #ddd;}
     .canlendar .container h3 {font-size:1.2rem;margin-bottom:1.5rem;}
     .canlendar .container i {float:right;}
 

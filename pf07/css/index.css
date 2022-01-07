@@ -40,13 +40,13 @@ body {font-size:0.8rem;}
 .bottom_banner .right .menu_title>li {position:relative;float:left;width:6.03rem;text-align:center;}
 
 .bottom_banner .right .menu_title ul {display:none;line-height:2.2;}
-.bottom_banner .right .menu_title li:hover .deep02 {display:block;}
-.bottom_banner .right .deep02 {position:absolute;left:0rem;top:3.8rem;z-index:999;background:var(--dd);}
-.bottom_banner .right .deep02>li {width:11rem;padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
-.bottom_banner .right .deep02>li:hover .deep03 {display:block;}
+.bottom_banner .right .menu_title li:hover .deep01 {display:block;}
+.bottom_banner .right .deep01 {position:absolute;left:0rem;top:3.8rem;z-index:999;background:var(--dd);}
+.bottom_banner .right .deep01>li {width:11rem;padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
+.bottom_banner .right .deep01>li:hover .deep02 {display:block;}
 
-.bottom_banner .right .deep03 {position:absolute;top:0;left:11.11rem;width:12rem;z-index:1000;background:var(--lc);}
-.bottom_banner .right .deep03>li {padding:0 1.5rem;z-index:1000;}
+.bottom_banner .right .deep02 {position:absolute;top:0;left:11.11rem;width:12rem;z-index:1000;background:var(--lc);}
+.bottom_banner .right .deep02>li {padding:0 1.5rem;z-index:1000;}
 
 /*------------------------ menu_title 메뉴1, deep01 소메뉴, depp02 2단 소메뉴 ------------------------*/
 /*------------------------ 강좌에서는 main1 메뉴1, main2 소메뉴, main3 2단 소메뉴 ------------------------*/
@@ -241,7 +241,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 .scroll_banner ul>li {background:#666;border-radius:50%;width:3rem;height:3rem;line-height:3rem;text-align:center;margin-top:1rem;}
 
 .mopen {display:none;position:fixed;top:1.5rem;right:0.5rem;width:3rem;height:3rem;line-height:1;font-size:2rem;
-    padding:0.5rem;background:#fff;z-index:1001;}
+    padding:0.5rem;background:#fff;}
 
 
 
@@ -284,9 +284,9 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
     html {font-size:16px;}
     body {font-size:0.8rem;}
 
-    .container {display:flex;width:auto;margin:0 auto;padding:0 0.75rem;}
+    .container {display:flex;width:20rem;margin:0 auto;padding:0 0.75rem;}
     .container_ {width:auto;margin:0 auto;padding:0 0.75rem;}
-    .p_br {display:none;}
+    .m_br {display:none;}
 
     /* ----------------------------------------- 반응형 메인 배너 -----------------------------------------  */
 
@@ -299,38 +299,30 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
     /* ----------------------------------------- 반응형 메인 배너 -----------------------------------------  */
 
-    .bottom_banner {line-height:4;width:100%;height:100%;}
-    .bottom_banner .left img {position:fixed;top:1%;left:1%;width:10rem;padding:1.2rem 0;z-index:10000;}
+    .bottom_banner {line-height:4;}
+    .bottom_banner .left img {position:fixed;top:0;left:1%;width:10rem;padding:1.2rem 0;}
     .bottom_banner .left {margin-right:1rem;}
 
     .bottom_banner .right {width:100%;}
-    .bottom_banner .right .gnb {background:var(--lc);}
+    .bottom_banner .right .gnb {background:#ff0;}
     nav {position:fixed;top:0;left:-100%;width:100%;height:100vh;background:#fff;border-right:1px solid #333;
     overflow:hidden;transition:0.5s;z-index:1;}
     nav.on {left:0;}
-    .bottom_banner .menu_title {position:relative;display:flex;flex-flow:column wrap;font-size:1rem;font-weight:400;z-index:999;height:100vh;
-        padding-top:7rem;width:12rem;}
-    .bottom_banner .right .menu_title>li  {position:relative;width:100%;text-align:center;}    
 
-    .bottom_banner .right .menu_title ul {display:block;line-height:2.2;}
-    .bottom_banner .right .menu_title li:hover .deep01 {display:none;}
+    .bottom_banner .menu_title {float:left;font-size:1rem;font-weight:400;z-index:999;}
+    .bottom_banner .right .menu_title>li {position:relative;float:left;width:6.03rem;text-align:center;}
 
-    .bottom_banner .right .menu_title ul {display:block;line-height:2.2;}
-    .bottom_banner .right .menu_title li:hover .deep01 {display:none;}
-    .bottom_banner .right .deep01 {display:block;position:absolute;left:12.1rem;top:0;z-index:999;background:var(--dd);
-    width:100%;height:100vh;}
-    .bottom_banner .right .deep01>li {width:100%;padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
-    .bottom_banner .right .deep01>li:hover .deep02 {display:none;}
+    .bottom_banner .right .menu_title ul {display:none;line-height:2.2;}
+    .bottom_banner .right .menu_title li:hover .deep01 {display:block;}
+    .bottom_banner .right .deep01 {position:absolute;left:0rem;top:3.8rem;z-index:999;background:var(--dd);}
+    .bottom_banner .right .deep01>li {width:11rem;padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
+    .bottom_banner .right .deep01>li:hover .deep02 {display:block;}
 
     .bottom_banner .right .deep02 {position:absolute;top:0;left:11.11rem;width:12rem;z-index:1000;background:var(--lc);}
-    .bottom_banner .right .deep02>li {display:none;padding:0 1.5rem;z-index:1000;}
-
-
-    
+    .bottom_banner .right .deep02>li {padding:0 1.5rem;z-index:1000;}
 
     /*------------------------ menu_title 메뉴1, deep01 소메뉴, depp02 2단 소메뉴 ------------------------*/
     /*------------------------ 강좌에서는 main1 메뉴1, main2 소메뉴, main3 2단 소메뉴 ------------------------*/
-    /*------------------------ remenu04 에서 menu_title이 depth01 ------------------------*/
 
     /* ----------------------------------------- 반응형 1단 슬라이드 -----------------------------------------  */
 
@@ -375,8 +367,8 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
     /* ----------------------------------------- 반응형 빠른 메뉴 -----------------------------------------  */
 
-    .quick_menu .container ul {display:flex;flex-wrap:wrap;width:100%;}
-    .quick_menu .container ul>li {width:7rem;padding:0 0.75rem;text-align:center;}
+    .quick_menu .container ul {display:flex;}
+    .quick_menu .container ul>li {width:6.5rem;padding:0 0.75rem;text-align:center;}
     .quick_menu .container ul>li i {font-size:1.5rem;margin:1.5rem 0;}
     .quick_menu .container ul>li p {font-size:0.85rem;font-weight:400;padding-bottom:1.5rem;}
 
@@ -519,9 +511,9 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
     .footer .right img {width:6rem;margin-left:2.3rem;}
 
-    .scroll_banner ul {position:fixed;top:30%;right:1.5rem;}
+    .scroll_banner ul {position:fixed;top:30%;right:8rem;}
     .scroll_banner ul>li {background:#666;border-radius:50%;width:3rem;height:3rem;line-height:3rem;text-align:center;margin-top:1rem;}
 
-    .mopen {display:block;position:fixed;top:1.5rem;right:0.5rem;width:3rem;height:3rem;line-height:1;font-size:2rem;
+    .mopen {display:black;position:fixed;top:1.5rem;right:0.5rem;width:3rem;height:3rem;line-height:1;font-size:2rem;
         padding:0.5rem;background:#fff;}
     }
