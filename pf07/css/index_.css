@@ -40,13 +40,13 @@ body {font-size:0.8rem;}
 .bottom_banner .right .menu_title>li {position:relative;float:left;width:6.03rem;text-align:center;}
 
 .bottom_banner .right .menu_title ul {display:none;line-height:2.2;}
-.bottom_banner .right .menu_title li:hover .deep02 {display:block;}
-.bottom_banner .right .deep02 {position:absolute;left:0rem;top:3.8rem;z-index:999;background:var(--dd);}
-.bottom_banner .right .deep02>li {width:11rem;padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
-.bottom_banner .right .deep02>li:hover .deep03 {display:block;}
+.bottom_banner .right .menu_title li:hover .deep01 {display:block;}
+.bottom_banner .right .deep01 {position:absolute;left:0rem;top:3.8rem;z-index:999;background:var(--dd);}
+.bottom_banner .right .deep01>li {width:11rem;padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
+.bottom_banner .right .deep01>li:hover .deep02 {display:block;}
 
-.bottom_banner .right .deep03 {position:absolute;top:0;left:11.11rem;width:12rem;z-index:1000;background:var(--lc);}
-.bottom_banner .right .deep03>li {padding:0 1.5rem;z-index:1000;}
+.bottom_banner .right .deep02 {position:absolute;top:0;left:11.11rem;width:12rem;z-index:1000;background:var(--lc);}
+.bottom_banner .right .deep02>li {padding:0 1.5rem;z-index:1000;}
 
 /*------------------------ menu_title 메뉴1, deep01 소메뉴, depp02 2단 소메뉴 ------------------------*/
 /*------------------------ 강좌에서는 main1 메뉴1, main2 소메뉴, main3 2단 소메뉴 ------------------------*/
@@ -241,7 +241,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 .scroll_banner ul>li {background:#666;border-radius:50%;width:3rem;height:3rem;line-height:3rem;text-align:center;margin-top:1rem;}
 
 .mopen {display:none;position:fixed;top:1.5rem;right:0.5rem;width:3rem;height:3rem;line-height:1;font-size:2rem;
-    padding:0.5rem;background:#fff;z-index:1001;}
+    padding:0.5rem;background:#fff;}
 
 
 
@@ -286,12 +286,12 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
     .container {display:flex;width:auto;margin:0 auto;padding:0 0.75rem;}
     .container_ {width:auto;margin:0 auto;padding:0 0.75rem;}
-    .p_br {display:none;}
+    .m_br {display:none;}
 
     /* ----------------------------------------- 반응형 메인 배너 -----------------------------------------  */
 
-    .top_benner {display:flex;line-height:2.1;width:100%;border-bottom:1px solid #f1f1f1;}
-    .top_benner .left {width:50%;}
+    .top_benner {line-height:2.1;width:30rem;border-bottom:1px solid #f1f1f1;overflow:hidden;}
+    .top_benner .left {width:100%;}
     .top_benner .left ul {display:flex;}
     .top_benner .right {width:50%;}
     .top_benner .right ul {display:flex;justify-content:right;}
@@ -299,38 +299,34 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
     /* ----------------------------------------- 반응형 메인 배너 -----------------------------------------  */
 
-    .bottom_banner {line-height:4;width:100%;height:100%;}
-    .bottom_banner .left img {position:fixed;top:1%;left:1%;width:10rem;padding:1.2rem 0;z-index:10000;}
+    .bottom_banner {line-height:4;}
+    .bottom_banner .left img {position:fixed;top:0;left:1%;width:10rem;margin:0.75rem;z-index:1000;}
     .bottom_banner .left {margin-right:1rem;}
 
     .bottom_banner .right {width:100%;}
-    .bottom_banner .right .gnb {background:var(--lc);}
+    .bottom_banner .right .gnb {background:#ff0;}
     nav {position:fixed;top:0;left:-100%;width:100%;height:100vh;background:#fff;border-right:1px solid #333;
     overflow:hidden;transition:0.5s;z-index:1;}
     nav.on {left:0;}
-    .bottom_banner .menu_title {position:relative;display:flex;flex-flow:column wrap;font-size:1rem;font-weight:400;z-index:999;height:100vh;
-        padding-top:7rem;width:12rem;}
-    .bottom_banner .right .menu_title>li  {position:relative;width:100%;text-align:center;}    
+
+    .bottom_banner .menu_title {display:flex;flex-flow:column wrap;height:100vh;padding:6rem 0;
+        font-size:1rem;font-weight:400;z-index:999;}
+    .bottom_banner .right .menu_title>li {position:relative;text-align:left;width:12.35rem;font-size:1.2rem;font-weight:500;
+    padding-left:2rem;}
 
     .bottom_banner .right .menu_title ul {display:block;line-height:2.2;}
     .bottom_banner .right .menu_title li:hover .deep01 {display:none;}
-
-    .bottom_banner .right .menu_title ul {display:block;line-height:2.2;}
-    .bottom_banner .right .menu_title li:hover .deep01 {display:none;}
-    .bottom_banner .right .deep01 {display:block;position:absolute;left:12.1rem;top:0;z-index:999;background:var(--dd);
-    width:100%;height:100vh;}
-    .bottom_banner .right .deep01>li {width:100%;padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
+    .bottom_banner .right .deep01 {position:absolute;left:12.1rem;top:3.8rem;z-index:999;background:var(--dd);}
+    .bottom_banner .right .deep01>li {display:none;width:100%;
+    padding:0 1.5rem;text-align:left;font-size:0.85rem;position:relative;}
+    .bottom_banner .right .deep01>li.on .deep02 {display:block;}
     .bottom_banner .right .deep01>li:hover .deep02 {display:none;}
 
-    .bottom_banner .right .deep02 {position:absolute;top:0;left:11.11rem;width:12rem;z-index:1000;background:var(--lc);}
+    .bottom_banner .right .deep02 {display:none;position:fixed;top:0;left:11.11rem;width:12rem;z-index:1000;background:var(--lc);}
     .bottom_banner .right .deep02>li {display:none;padding:0 1.5rem;z-index:1000;}
-
-
-    
 
     /*------------------------ menu_title 메뉴1, deep01 소메뉴, depp02 2단 소메뉴 ------------------------*/
     /*------------------------ 강좌에서는 main1 메뉴1, main2 소메뉴, main3 2단 소메뉴 ------------------------*/
-    /*------------------------ remenu04 에서 menu_title이 depth01 ------------------------*/
 
     /* ----------------------------------------- 반응형 1단 슬라이드 -----------------------------------------  */
 
@@ -339,7 +335,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
     .popup {display:block;width:100%;position:absolute;bottom:3.8rem;left:50%;transform:translate(-50%,-50%);background:#999;z-index:0;height:11rem;}
     .popup.on {display:none;}
     .popup .container {position:relative;color:#fff;}
-    .popup .container .flex {display:flex;}
+    .popup .container .flex {display:block;}
     .popup .container .left {background:#999;width:auto;height:11rem;padding:2rem 3rem;}
     .popup .container .left .case {display:flex;align-items:center;}
     .popup .container .left .case h3 {font-size:1rem;font-weight:500;line-height:1.2rem;padding-bottom:0.25rem;}
@@ -348,7 +344,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
         background:url(../img/ccu30_signature_ke2.jpg);}
     .popup i.xi-close {position:absolute;top:6%;right:1%;color:#fff;font-size:1.2rem;}
 
-    .popup .container .right {width:auto;height:12rem;padding:2rem 3rem;}
+    .popup .container .right {width:auto;height:12rem;padding:2rem 3rem;overflow: hidden;}
     .popup .container .right .case {display:flex;align-items:center;}
     .popup .container .right .case h3 {font-size:1rem;font-weight:500;line-height:1.2rem;padding-bottom:0.25rem;}
     .popup .container .right .case .p_02 {display:block;width:5rem;height:5rem;margin-right:2rem;text-indent:-9999rem;border-radius:50%;
@@ -375,8 +371,8 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
     /* ----------------------------------------- 반응형 빠른 메뉴 -----------------------------------------  */
 
-    .quick_menu .container ul {display:flex;flex-wrap:wrap;width:100%;}
-    .quick_menu .container ul>li {width:7rem;padding:0 0.75rem;text-align:center;}
+    .quick_menu .container ul {display:flex;flex-wrap:wrap;}
+    .quick_menu .container ul>li {width:6.5rem;padding:0 0.75rem;text-align:center;}
     .quick_menu .container ul>li i {font-size:1.5rem;margin:1.5rem 0;}
     .quick_menu .container ul>li p {font-size:0.85rem;font-weight:400;padding-bottom:1.5rem;}
 
@@ -385,7 +381,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
     /* ----------------------------------------- 반응형 2단 달력 -----------------------------------------  */
 
-    .canlendar {position: relative;width:100%;height:35rem;background:url(../img/bg01.png) no-repeat top center/cover}
+    .canlendar {position: relative;width:100%;height:auto;background:url(../img/bg01.png) no-repeat top center/cover}
     .canlendar .txt {padding:3rem 0;text-align:center;}
     .canlendar .txt p {font-size:1rem;font-weight:300;margin-bottom:0.8rem;}
     .canlendar .txt h2 {font-size:1.5rem;font-weight:400;}
@@ -474,7 +470,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
     .history .top {align-items:center;}
     .history .top h3 {margin-left:1rem;text-align:left;}
 
-    .history .container ul {display:flex;}
+    .history .container ul {display:flex;flex-flow:column;}
     .history .container ul>li {width:390px;}
 
     .history .top {display:flex;justify-content:center;line-height:1.2;}
@@ -511,6 +507,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
     .footer .left {margin-right:2.3rem;}
 
+    .footer {display:inline-block;}
     .footer .center .top {display:block;font-size:0.8rem;font-weight:400;}
     .footer .center .top ul>li {padding:0 1.1rem;}
     .footer .center .top ul {display:flex;}
@@ -519,7 +516,7 @@ padding-bottom:0.4rem;text-overflow:ellipsis;}
 
     .footer .right img {width:6rem;margin-left:2.3rem;}
 
-    .scroll_banner ul {position:fixed;top:30%;right:1.5rem;}
+    .scroll_banner ul {position:fixed;top:30%;right:8rem;}
     .scroll_banner ul>li {background:#666;border-radius:50%;width:3rem;height:3rem;line-height:3rem;text-align:center;margin-top:1rem;}
 
     .mopen {display:block;position:fixed;top:1.5rem;right:0.5rem;width:3rem;height:3rem;line-height:1;font-size:2rem;
