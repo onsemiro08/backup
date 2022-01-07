@@ -9,15 +9,15 @@ $(function(){
             $(this).addClass('on').siblings().removeClass('on');
             $(this).siblings().find('.deep01').stop().slideUp();
             //$('.depth03').stop().slideUp();
-            //$(this).find('.depth02').stop().slideToggle();
+            //$(this).find('.deep02').stop().slideToggle();
         }
 
     });
 
-    $('.deep01>ul>li').on('click', function(){
+    $('.deep01>li').on('click', function(){
         if($(window).width() < 769) {
-            $(this).next().slideToggle();
-            $(this).parent().siblings().find('.deep02').slideUp();
+            $(this).siblings().find('.deep02').stop().slideUp();
+            $(this).find('.deep02').stop().slideToggle();
         }
     });
 
@@ -45,7 +45,6 @@ $(function(){
         arrows:false,
         autoplay:false,
         autoplaySpeed:5000,
-        slidesToShow: 2,
         pauseOnFocus:false,
         pauseOnHover:false,
         dots:true,
