@@ -1,5 +1,6 @@
 $(function(){
 
+    $('.top_banner .case').hide();
     $('.top_banner i').on('click', function(){
         $('.top_banner .case').slideToggle(500); //sliderToggle 슬라이드 위아래로
         $(this).toggleClass('on');
