@@ -1,15 +1,33 @@
 $(function(){
     //--------------------------------------------------
 
-    $('#forU').fullpage({
-        //navigation: true,
-        anchors:['s01', 's02', 's03', 's04', 's05'],
-        afterLoad: function(origin, destination, direction){
-            var idx=destination.index;
-            console.log(idx); // 0,1,2...
-            $('.section').eq(idx).addClass('on').siblings().removeClass('on');
-        },  
+    let sc=$('.section');
+    let sideBar=$('nav li');
+    $('#main').fullpage({
+        anchors:['intro', 'portfolio_01', 'portfolio_02', 'portfolio_03', 'portfolio_04', 'portfolio_05', 'profile'],
+        afterLoad:function(origin, destination, direction){
+            let idx=destination.index;
+            sc.eq(idx).addClass('on').siblings().removeClass('on');
+            sideBar.eq(idx).addClass('on').siblings().removeClass('on');
+        },
     });
-    //--------------------------------------------------
 
+    $('.cover_btn').on('click', function(){
+        $('#cover').fadeToggle();
+    });
+    
+    let cloneMenu = $('nav>ul').clone();
+    console.log(cloneMenu);
+    $('#cover').append(cloneMenu);
+    //cloneMenu.appendTo('#cover')
+    
+    $('#cover a').on('click', function(){
+        $('#cover').slideUp();
+    });
+    
+    $('#cover').on('scroll wheel', function(){
+        return false;
+    })
+    
+    //-----------------------------------------------------
 });
