@@ -1,4 +1,6 @@
-/* {outline:1px solid var(--sc);}*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Noto+Serif+KR:wght@200&display=swap');
+
+/*{outline:1px solid red;}*/
 
 :root {
     --mc:#FAAE67;
@@ -16,28 +18,143 @@ body {font-size:0.8rem;color:var(--dc);}
 
 #header h1 {position:fixed;top:3rem;left:3rem;z-index:999;}
 #header h1 a {display:block;width:15rem;}
-#header .top {position:fixed;top:0;right:0; width:100%;height:5rem;border-bottom:1px solid var(--br);}
-#header .top .top_l {width:85%;height:5rem;border-right:1px solid var(--br);}
+#header .h_top {position:fixed;top:0;right:0; width:100%;height:4rem;z-index:998;border-bottom:1px solid var(--br);}
+#header .top .top_l {width:85%;}
 #header .top .top_r {width:15%;}
+.top {display:block;width:100%;height:4rem;font-size:0;z-index:-1;}
+.intro_stoke {display:flex;}
 
-#header nav {position:fixed;top:5%;left:3rem;transform:translateY(-50%);z-index:999;}
+#header nav {position:fixed;top:4%;left:3rem;transform:translateY(-50%);z-index:999;}
 #header nav ul {display:flex;}
 #header nav ul>li {padding:0 1rem;font-size:0.9rem;font-weight:100;}
-#header .cover_btn {position:fixed;top:1.5rem;right:3rem;z-index:999;}
-#header .cover_btn i {font-size:1.5rem;padding:.5rem;background:var(--lc)}
+#header .cover_btn {position:fixed;top:2.5%;right:3rem;z-index:999;}
+#header .cover_btn i {font-size:1.5rem;}
 
-.intro .top {display:block;width:100%;height:5rem;font-size:0;z-index:-1;}
-.intro .intro_stoke {display:flex;}
 
-.intro .left {position:relative;;width:25%;height:calc(100vh - 5rem);border-right:1px solid var(--br);}
+
+/* ----------------------------------------------- 섹션 1 인트로 ----------------------------------------------- */
+
+
+.intro {border-bottom:1px solid var(--br);}
+.intro .left {position:relative;width:25%;height:calc(100vh - 4rem);border-right:1px solid var(--br);}
 .intro .left .left_b {position:absolute;bottom:0;left:0;width:100%;height:10rem;border-top:1px solid var(--br);}
-.intro .left .left_c h2 {font-size:2.5rem;font-weight:100;line-height:3rem;margin:15rem 0 0 2rem;}
-.intro .left .left_c p {width:30%;font-size:0.8rem;font-weight:100;margin:1rem 0 0 2rem;padding:0.3rem;border:1px solid var(--br);}
+.intro .left .left_c h2 {position:absolute;top:35%;left:1rem;transform:translateY(-50%);font-size:2.5rem;font-weight:100;
+line-height:3rem;}
+.intro .left .left_c p {position:absolute;top:45%;left:1rem;transform:translateY(-50%);width:30%;font-size:0.9rem;font-weight:100;}
 
-.intro .left .left_b p {position:absolute;bottom:15%;left:0;font-size:1rem;font-weight:100;margin:4rem 0 0 2rem;}
+.intro .left .left_b p {font-size:1rem;font-weight:100;margin:1rem 0 0 1rem;}
 
-.intro .center {width:50%;height:calc(100vh - 5rem);}
+.intro .center {width:50%;height:calc(100vh - 4rem);}
 
-.intro .right {position:relative;width:25%;height:calc(100vh - 5rem);border-left:1px solid var(--br);}
+.intro .right {position:relative;width:25%;height:calc(100vh - 4rem);border-left:1px solid var(--br);}
 .intro .right .right_c {width:100%;}
 .intro .right .right_b {position:absolute;bottom:0;left:0;width:100%;height:25rem;border-top:1px solid var(--br);}
+
+/* ----------------------------------------------- 섹션 2 포폴1 ----------------------------------------------- */
+
+
+.portfolio_01 {display:flex;border-bottom:1px solid var(--br);}
+.portfolio_01 .pf_l {position:relative;width:15%;height:calc(100vh - 4rem);border-right:1px solid var(--br);}
+.portfolio_01 .pf_l_t {width:100%;height:35rem;padding:0.75rem;}
+.portfolio_01 .pf_l_b {position:absolute;bottom:0;left:0;width:100%;height:6rem;
+    border-top:1px solid var(--br);padding:0.75rem;line-height:1.1rem;}
+
+.portfolio_01 .pf_c {position:relative;width:55%;height:calc(100vh - 4rem);overflow:hidden;}
+.portfolio_01 .pf_c figure {transition:2s;cursor: pointer;overflow:hidden;padding:1rem;}
+.portfolio_01 .pf_c figure img {width:100%;transition:1s;cursor: pointer;}
+.portfolio_01 .pf_c figure:hover {transform:translateY(-50%);top:100%;}
+
+.portfolio_01 .pf_r {display:flex;width:30%;height:calc(100vh - 4rem);border-left:1px solid var(--br);}
+.portfolio_01 .pf_r .pf_r_t {width:100%;text-align:center;margin:1.5rem 0;}
+.portfolio_01 .pf_r .pf_r_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;right:0;width:30%;height:20rem;
+border-top:1px solid var(--br);}
+.portfolio_01 .pf_r_b .color {width:50%;height:10rem;padding:0.75rem;}
+.portfolio_01 .r_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);}
+.portfolio_01 .r_b_02 {border-bottom:1px solid var(--br);}
+.portfolio_01 .r_b_03 {border-right:1px solid var(--br);}
+
+/* ----------------------------------------------- 섹션 3 포폴2 ----------------------------------------------- */
+
+.portfolio_02 {display:flex;border-bottom:1px solid var(--br);}
+.portfolio_02 .pf_l {width:30%;height:calc(100vh - 4rem);border-right:1px solid var(--br);}
+.portfolio_02 .pf_l .pf_l_t {width:100%;text-align:center;margin:1.5rem 0;}
+.portfolio_02 .pf_l .pf_l_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;left:0;width:30%;height:20rem;
+border-top:1px solid var(--br);}
+.portfolio_02 .l_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);}
+.portfolio_02 .l_b_02 {border-bottom:1px solid var(--br);}
+.portfolio_02 .l_b_03 {border-right:1px solid var(--br);}
+.portfolio_02 .pf_l_b .color {width:50%;height:10rem;padding:0.75rem;}
+
+.portfolio_02 .pf_c {position:relative;width:60%;height:calc(100vh - 4rem);overflow: hidden;}
+.portfolio_02 .pf_r {position:relative;width:10%;height:calc(100vh - 4rem);border-left:1px solid var(--br);}
+.portfolio_02 .pf_r_t {width:100%;height:35rem;}
+.portfolio_02 .pf_r_b {width:100%;border-top:1px solid var(--br);}
+
+
+/* ----------------------------------------------- 섹션 4 포폴3 ----------------------------------------------- */
+
+
+.portfolio_03 {display:flex;border-bottom:1px solid var(--br);}
+.portfolio_03 .pf_l {position:relative;width:10%;height:calc(100vh - 4rem);border-right:1px solid var(--br);}
+.portfolio_03 .pf_l_t {width:100%;height:35rem;}
+.portfolio_03 .pf_l_b {width:100%;border-top:1px solid var(--br);}
+
+.portfolio_03 .pf_c {position:relative;width:60%;height:calc(100vh - 4rem);overflow: hidden;}
+.portfolio_03 .pf_r {display:flex;width:30%;height:calc(100vh - 4rem);border-left:1px solid var(--br);}
+.portfolio_03 .pf_r .pf_r_t {width:100%;text-align:center;margin:1.5rem 0;}
+.portfolio_03 .pf_r .pf_r_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;right:0;width:30%;height:20rem;
+border-top:1px solid var(--br);}
+.portfolio_03 .pf_r_b .color {width:50%;height:10rem;padding:0.75rem;}
+.portfolio_03 .r_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);}
+.portfolio_03 .r_b_02 {border-bottom:1px solid var(--br);}
+.portfolio_03 .r_b_03 {border-right:1px solid var(--br);}
+
+/* ----------------------------------------------- 섹션 5 포폴4 ----------------------------------------------- */
+
+.portfolio_04 {display:flex;border-bottom:1px solid var(--br);}
+.portfolio_04 .pf_l {width:30%;height:calc(100vh - 4rem);border-right:1px solid var(--br);}
+.portfolio_04 .pf_l .pf_l_t {width:100%;text-align:center;margin:1.5rem 0;}
+.portfolio_04 .pf_l .pf_l_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;left:0;width:30%;height:20rem;
+border-top:1px solid var(--br);}
+.portfolio_04 .l_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);}
+.portfolio_04 .l_b_02 {border-bottom:1px solid var(--br);}
+.portfolio_04 .l_b_03 {border-right:1px solid var(--br);}
+.portfolio_04 .pf_l_b .color {width:50%;height:10rem;padding:0.75rem;}
+
+.portfolio_04 .pf_c {position:relative;width:60%;height:calc(100vh - 4rem);overflow: hidden;}
+.portfolio_04 .pf_r {position:relative;width:10%;height:calc(100vh - 4rem);border-left:1px solid var(--br);}
+.portfolio_04 .pf_r_t {width:100%;height:35rem;}
+.portfolio_04 .pf_r_b {width:100%;border-top:1px solid var(--br);}
+
+/* ----------------------------------------------- 섹션 5 포폴4 ----------------------------------------------- */
+
+.portfolio_05 {display:flex;border-bottom:1px solid var(--br);}
+.portfolio_05 .pf_l {position:relative;width:10%;height:calc(100vh - 4rem);border-right:1px solid var(--br);}
+.portfolio_05 .pf_l_t {width:100%;height:35rem;}
+.portfolio_05 .pf_l_b {width:100%;border-top:1px solid var(--br);}
+
+.portfolio_05 .pf_c {position:relative;width:60%;height:calc(100vh - 4rem);overflow: hidden;}
+.portfolio_05 .pf_r {display:flex;width:30%;height:calc(100vh - 4rem);border-left:1px solid var(--br);}
+.portfolio_05 .pf_r .pf_r_t {width:100%;text-align:center;margin:1.5rem 0;}
+.portfolio_05 .pf_r .pf_r_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;right:0;width:30%;height:20rem;
+border-top:1px solid var(--br);}
+.portfolio_05 .pf_r_b .color {width:50%;height:10rem;padding:0.75rem;}
+.portfolio_05 .r_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);}
+.portfolio_05 .r_b_02 {border-bottom:1px solid var(--br);}
+.portfolio_05 .r_b_03 {border-right:1px solid var(--br);}
+
+/* ----------------------------------------------- 섹션 6 프로필 ----------------------------------------------- */
+
+.profile {display:flex;border-bottom:1px solid var(--br);}
+.profile .pr_l {position:relative;width:30%;height:calc(100vh - 4rem);border-right:1px solid var(--br);}
+.profile .pr_l .pr_t {width:100%;height:calc(100vh - 20rem);}
+
+.profile .pr_l .contaier {width:100%;height:8rem;border-top:1px solid var(--br);}
+
+.profile .pr_r {position:relative;width:70%;height:calc(100vh - 4rem);}
+
+#cover {display:none;position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);width:100%;height:100vh;
+z-index:998;}
+#cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--dc);
+font-size:1.2rem;font-weight:300;line-height:1.5;text-align:center;background:var(--lc);padding:5rem;border-radius:50%;}
+    
