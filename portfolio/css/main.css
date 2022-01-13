@@ -1,23 +1,43 @@
+/* {outline:1px solid var(--sc);}*/
+
 :root {
     --mc:#FAAE67;
     --sc:#D65490;
     --lc:#f7f7f7;
     --dc:#444444;
     --gc:#dddddd;
+    --br:#999999;
 }
 
-html {font-size:20px;}
+html {font-size:20px;background:var(--lc);}
 body {font-size:0.8rem;color:var(--dc);}
 
 #Wrap {min-width:95rem;}
 
 #header h1 {position:fixed;top:3rem;left:3rem;z-index:999;}
 #header h1 a {display:block;width:15rem;}
+#header .top {position:fixed;top:0;right:0; width:100%;height:5rem;border-bottom:1px solid var(--br);}
+#header .top .top_l {width:85%;height:5rem;border-right:1px solid var(--br);}
+#header .top .top_r {width:15%;}
 
-#header nav {position:fixed;top:50%;right:3rem;transform:translateY(-50%);z-index:999;}
-#header .cover_btn {position:fixed;top:3rem;right:3rem;z-index:999;}
+#header nav {position:fixed;top:5%;left:3rem;transform:translateY(-50%);z-index:999;}
+#header nav ul {display:flex;}
+#header nav ul>li {padding:0 1rem;font-size:0.9rem;font-weight:100;}
+#header .cover_btn {position:fixed;top:1.5rem;right:3rem;z-index:999;}
 #header .cover_btn i {font-size:1.5rem;padding:.5rem;background:var(--lc)}
 
-#header nav li a {position:relative;display:block;width:3rem;height:1rem;text-indent:-99999px;}
-#header nav li a:after {content:"";position:absolute;top:0.35rem;right:0;display:block;width:40%;height:0.2rem;background:var(--dc);border-radius:0.15rem;transition:0.3s;}
-#header nav li.on a:after {width:70%;}
+.intro .top {display:block;width:100%;height:5rem;font-size:0;z-index:-1;}
+.intro .intro_stoke {display:flex;}
+
+.intro .left {position:relative;;width:25%;height:calc(100vh - 5rem);border-right:1px solid var(--br);}
+.intro .left .left_b {position:absolute;bottom:0;left:0;width:100%;height:10rem;border-top:1px solid var(--br);}
+.intro .left .left_c h2 {font-size:2.5rem;font-weight:100;line-height:3rem;margin:15rem 0 0 2rem;}
+.intro .left .left_c p {width:30%;font-size:0.8rem;font-weight:100;margin:1rem 0 0 2rem;padding:0.3rem;border:1px solid var(--br);}
+
+.intro .left .left_b p {position:absolute;bottom:15%;left:0;font-size:1rem;font-weight:100;margin:4rem 0 0 2rem;}
+
+.intro .center {width:50%;height:calc(100vh - 5rem);}
+
+.intro .right {position:relative;width:25%;height:calc(100vh - 5rem);border-left:1px solid var(--br);}
+.intro .right .right_c {width:100%;}
+.intro .right .right_b {position:absolute;bottom:0;left:0;width:100%;height:25rem;border-top:1px solid var(--br);}
