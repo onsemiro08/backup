@@ -1,9 +1,9 @@
 $(function(){
 
-    $('.top_banner .case').hide();
+    //$('.top_banner .case').hide();
     $('.top_banner i').on('click', function(){
-        $('.top_banner .case').slideToggle(500); //sliderToggle 슬라이드 위아래로
-        $(this).toggleClass('on');
+        $('.top_banner .case').toggleClass('on'); //sliderToggle 슬라이드 위아래로
+        $('.btn').toggleClass('on');
     });
 
 //$('.top_banner i').on('click', function(){
@@ -92,9 +92,22 @@ $(function(){
         });
 
     let pFigure=$(".p_slider .p_slider_f");
-    pFigure.eq(7).addClass("on")
+
+    
+
+    if($(window).width() > 768) {
+        pFigure.eq(7).addClass("on");
+    }else {
+        pFigure.eq(4).addClass("on");
+    }
+
     pSlider.on("afterChange", function(e,s,c){
-    pFigure.eq(c+7).addClass("on").siblings().removeClass("on");
+        if($(window).width() > 768) {
+            pFigure.eq(c+7).addClass("on").siblings().removeClass("on");
+        }else {
+            pFigure.eq(c+4).addClass("on").siblings().removeClass("on");
+        }
+    
     });
 
     $('.toTop').on('click', function(){
