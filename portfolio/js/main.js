@@ -12,13 +12,6 @@ $(function(){
         },
     });
 
-    //WEB is My MONEY
-    new Typed('.slogan_txt',{
-        strings: ['단순함을<br> 미덕으로 삼다.'],
-        typeSpeed:200,
-    });
-
-
     $('.cover_btn').on('click', function(){
         $('#cover').fadeToggle();
     });
