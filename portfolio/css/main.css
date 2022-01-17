@@ -1,4 +1,4 @@
-/* {outline:1px solid brown}*/
+/* * {outline:1px solid brown} */
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 
@@ -9,6 +9,7 @@
     --dc:#444444;
     --gc:#dddddd;
     --br:#999999;
+    --bg:#F2F0F5;
 }
 
 html {font-size:20px;background:#F2F0F5;}
@@ -18,25 +19,26 @@ body {font-size:0.8rem;color:var(--dc);font-weight:300;}
 
 #header h1 {position:fixed;top:3rem;left:3rem;z-index:999;}
 #header h1 a {display:block;width:15rem;}
-#header .h_top {position:fixed;top:0;right:0;width:100%;height:4rem;z-index:998;border-bottom:1px solid var(--br);}
-#header .h_top::before {content:"";display:block;position:absolute;top:0;left:0;width:5%;height:4rem;
-border-right:1px solid var(--br);}
-#header .h_top::after {content:"";display:block;position:absolute;top:0;right:0;width:5%;height:4rem;
-border-left:1px solid var(--br);}
+#header .h_top {position:fixed;top:0;right:0;width:100%;height:4rem;z-index:998;}
+#header .h_top::before {content:"";display:block;position:absolute;top:0;left:0;width:5%;height:4rem;}
+#header .h_top::after {content:"";display:block;position:absolute;top:0;right:0;width:5%;height:4rem;}
 
-#header .h_top .fixed_stoke {width:5%;height:4rem;border-right:1px solid var(--br);}
-#header .h_top .fixed_stoke_r {width:5%;height:4rem;border-left:1px solid var(--br);
-float:right;}
+#header .h_top .fixed_stoke {width:5%;height:4rem;}
+#header .h_top .fixed_stoke_r {width:5%;height:4rem;float:right;}
 #header .top .top_l {width:85%;}
 #header .top .top_r {width:15%;}
-.top {display:block;width:100%;height:4rem;font-size:0;z-index:-1;}
+.top {display:block;width:100%;height:4rem;font-size:0;border-bottom:1px solid var(--br);}
+.top_left {width:4.8rem;height:4rem;background:var(--dc);}
 .intro_stoke {display:flex;}
 
-#header nav {position:fixed;top:4%;left:3rem;transform:translateY(-50%);z-index:999;}
-#header nav ul {display:flex;}
-#header nav ul>li:nth-child(1) {padding-left:5rem;}
-#header nav ul>li {padding:0 1rem;font-size:0.9rem;font-weight:300;color:var(--dc);}
-#header .cover_btn {position:fixed;top:2.5%;right:1.5rem;z-index:999;}
+#header nav {position:fixed;top:4%;right:3rem;transform:translateY(-50%);z-index:999;}
+#header nav ul {display:flex;padding-right:0.75rem;}
+#header nav ul>li {position:relative;padding:0 1rem;font-size:0.9rem;font-weight:300;color:var(--dc);}
+#header nav ul>li.on {font-weight:500;}
+#header nav ul>li.on::after {content:"";display:block;width:3rem;height:2px;position:absolute;bottom:-0.75rem;left:50%;transform:translateX(-50%);
+background:var(--dc);}
+#header .cover_btn {position:fixed;top:1.8%;left:1.2rem;z-index:999;padding:0.5rem;background:var(--dc);
+color:var(--lc);}
 #header .cover_btn i {font-size:1.5rem;}
 
 .section img {max-width:100%;}
@@ -44,20 +46,20 @@ float:right;}
 /* ----------------------------------------------- 섹션 1 인트로 ----------------------------------------------- */
 
 
-.intro {border-bottom:1px solid var(--br);}
-.intro .left {position:relative;width:25%;height:calc(100vh - 4rem);border-right:1px solid var(--br);}
-.intro .left .left_b {position:absolute;bottom:0;left:0;width:100%;height:10rem;border-top:1px solid var(--br);}
-.intro .left .left_c h2 {position:absolute;top:35%;left:1rem;transform:translateY(-50%);font-size:2.5rem;font-weight:300;
-line-height:3rem;font-family: 'Noto Serif KR', serif;}
-.intro .left .left_c p {position:absolute;top:45%;left:1rem;transform:translateY(-50%);width:30%;font-size:1rem;font-weight:100;}
+.intro {position:relative;border-bottom:1px solid var(--br);}
+.intro .top {border:none;}
+.intro .left {position:absolute;top:42%;left:5%;transform:translateY(-50%);width:35%;}
+.intro .left h2 {font-size:3rem;font-weight:600;line-height:3.7rem;font-family: 'Noto Serif KR', serif;}
+.intro .left p {font-size:1.2rem;font-weight:300;margin-top:1rem;}
 
-.intro .left .left_b p {font-size:1.2rem;font-weight:100;margin:1rem 0 0 1rem;}
+.intro .center {position:absolute;top:52%;right:5%;transform:translateY(-50%);width:50%;padding:1rem 0 1rem 1rem;}
 
-.intro .center {width:50%;height:calc(100vh - 4rem);}
+.intro .right {width:5%;height:calc(100vh - 4rem);}
 
-.intro .right {position:relative;width:25%;height:calc(100vh - 4rem);border-left:1px solid var(--br);}
-.intro .right .right_c {width:100%;}
-.intro .right .right_b {position:absolute;bottom:0;left:0;width:100%;height:25rem;border-top:1px solid var(--br);}
+.intro .bottom {position:absolute;bottom:9%;left:5%;transform:translateY(-50%);}
+.intro .bottom i {font-size:1.2rem;}
+.intro .bottom ul>li {font-size:1rem;line-height:1.6rem;}
+
 
 /* ----------------------------------------------- 섹션 2 포폴1 ----------------------------------------------- */
 
@@ -67,21 +69,14 @@ line-height:3rem;font-family: 'Noto Serif KR', serif;}
 .portfolio_01 .pf_l {position:absolute;width:5%;height:100vh;top:0;left:0;
 border-right:1px solid var(--br);}
 .portfolio_01 .pf_l_t {width:5%;height:calc(100vh - 4rem);}
+.portfolio_01 .pf_r_t h2 {line-height:2rem;font-weight:500;font-family: 'Noto Serif KR', serif;}
+.portfolio_01 .pf_r_t p {font-size:1rem;margin-top:0.5rem;}
 
 .portfolio_01 .pf_c {position:relative;width:65%;height:calc(100vh - 4rem);overflow:hidden;}
-.portfolio_01 .pf_c .container {width:60%;height:100%;margin:3rem auto 0;}
-.portfolio_01 .pf_c .container h2 {font-size:1.3rem;text-align:center;margin-top:1rem;font-family: 'Noto Serif KR', serif;
-font-weight:500;}
-.portfolio_01 .pf_c_t {width:100%;height:35rem;padding:0.75rem;}
-.portfolio_01 .mockup {background:url(../img/mockup1.png) no-repeat center top/100%;padding:5% 5% 5% 5%;}
-.portfolio_01 .mockup figure {position:relative;padding-bottom:56.25%;overflow:hidden;}
-.portfolio_01 .mockup figure img {position:absolute;top:0;left:0;
-width:100%;transition:5s;cursor:pointer;}
-.portfolio_01 .mockup figure:hover {transform:translateY(-50%);top:100%;transition:0.5s;}
-
+.portfolio_01 .pf_c figure:hover img {transform:translateY(-50%);top:100%;transition:1s;} 
 
 .portfolio_01 .pf_c_b {display:flex;position:absolute;bottom:0;left:0;width:100%;height:10rem;
-border-top:1px solid var(--br);line-height:1.1rem;}
+border-top:1px solid var(--br);line-height:1.1rem;z-index:999;background:var(--bg);}
 
 .portfolio_01 .pf_c_b .txt {padding:0.75rem;font-size:0.95rem;}
 .portfolio_01 .pf_c_b .first {width:33.3%;height:10rem;}
@@ -93,10 +88,11 @@ border-top:1px solid var(--br);line-height:1.1rem;}
 .portfolio_01 .pf_r .pf_r_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;right:0;width:30%;height:20rem;
 border-top:1px solid var(--br);}
 .portfolio_01 .pf_r_b .color {width:50%;height:10rem;padding:0.75rem;}
-.portfolio_01 .pf_r_b .color p {font-size:1rem;}
-.portfolio_01 .r_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);}
-.portfolio_01 .r_b_02 {border-bottom:1px solid var(--br);}
-.portfolio_01 .r_b_03 {border-right:1px solid var(--br);}
+.portfolio_01 .pf_r_b .color p {font-size:1rem;line-height:1.3rem;}
+.portfolio_01 .r_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);background:#009c84;color:var(--lc);}
+.portfolio_01 .r_b_02 {border-bottom:1px solid var(--br);background:#fff;color:#111;}
+.portfolio_01 .r_b_03 {border-right:1px solid var(--br);background:#ed6d01;color:var(--lc);}
+.portfolio_01 .r_b_04 {border-right:1px solid var(--br);background:#000;color:var(--lc);}
 
 /* ----------------------------------------------- 섹션 3 포폴2 ----------------------------------------------- */
 
@@ -104,34 +100,32 @@ border-top:1px solid var(--br);}
 
 .portfolio_02 .pf_l {display:flex;width:30%;height:calc(100vh - 4rem);border-right:1px solid var(--br);}
 .portfolio_02 .pf_l .pf_l_t {width:100%;text-align:center;margin:1.5rem 0;}
-.portfolio_02 .pf_l .pf_l_t p {font-size:1.2rem;}
+.portfolio_02 .pf_l_t h2 {font-size:1.2rem;line-height:2rem;font-weight:500;font-family: 'Noto Serif KR', serif;}
+.portfolio_02 .pf_l_t p {font-size:1rem;margin-top:0.5rem;}
+
 .portfolio_02 .pf_l .pf_l_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;left:0;
 width:30%;height:20rem;border-top:1px solid var(--br);}
 .portfolio_02 .pf_l_b .color {width:50%;height:10rem;padding:0.75rem;font-size:1rem;}
+.portfolio_02 .pf_l_b .color p {font-size:1rem;line-height:1.3rem;}
+
 .portfolio_02 .l_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);
-background:rosybrown;}
-.portfolio_02 .l_b_02 {border-bottom:1px solid var(--br);}
-.portfolio_02 .l_b_03 {border-right:1px solid var(--br);}
+background:#63abf5;color:#fff;}
+.portfolio_02 .l_b_02 {border-bottom:1px solid var(--br);background:#ffff00;color:#111;}
+.portfolio_02 .l_b_03 {border-right:1px solid var(--br);background:#ff0000;color:#fff;}
+.portfolio_02 .l_b_04 {background:#ffffff;color:#111;}
 
 .portfolio_02 .pf_c {position:relative;width:65%;height:calc(100vh - 4rem);overflow:hidden;}
-.portfolio_02 .pf_c .container {width:60%;height:100%;margin:3rem auto 0;}
-.portfolio_02 .pf_c .container h2 {font-size:1.3rem;text-align:center;margin-top:1rem;font-family: 'Noto Serif KR', serif;
-font-weight:500;}
-.portfolio_02 .pf_c_t {width:100%;height:35rem;padding:0.75rem;}
-.portfolio_02 .mockup {background:url(../img/mockup1.png) no-repeat center top/100%;padding:5% 5% 5% 5%;}
-.portfolio_02 .mockup figure {position:relative;padding-bottom:56.25%;overflow:hidden;}
-.portfolio_02 .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:5s;cursor:pointer;}
-.portfolio_02 .mockup figure:hover {transform:translateY(-50%);top:100%;transition:0.5s;}
+.portfolio_02 .pf_c figure:hover img {transform:translateY(-50%);top:100%;transition:1s;}
 
-.portfolio_02 .pf_c_b {display:flex;position:absolute;bottom:0;left:0;width:100%;height:10rem;
-border-top:1px solid var(--br);line-height:1.1rem;}
+.portfolio_02 .pf_c_b {display:flex;position:absolute;bottom:0;right:5%;width:65%;height:10rem;
+border-top:1px solid var(--br);line-height:1.1rem;background:var(--bg);}
 
 .portfolio_02 .pf_c_b .txt {padding:0.75rem;font-size:0.95rem;}
 .portfolio_02 .pf_c_b .first {width:33.3%;height:10rem;}
 .portfolio_02 .pf_c_b .second {width:33.3%;height:10rem;border-left:1px solid var(--br);}
 .portfolio_02 .pf_c_b .third {width:33.3%;height:10rem;border-left:1px solid var(--br);}
 
-.portfolio_02 .pf_r {position:absolute;width:5%;height:100vh;top:0;right:0;
+.portfolio_02 .pf_r {position:absolute;width:5%;height:calc(100vh - 4rem);bottom:0;right:0;
 border-left:1px solid var(--br);}
 .portfolio_02 .pf_r_t {width:5%;height:calc(100vh - 4rem);}    
 
@@ -145,19 +139,10 @@ border-right:1px solid var(--br);}
 .portfolio_03 .pf_l_t {width:5%;height:calc(100vh - 4rem);}
 
 .portfolio_03 .pf_c {position:relative;width:65%;height:calc(100vh - 4rem);overflow:hidden;}
-.portfolio_03 .pf_c .container {width:60%;height:100%;margin:3rem auto 0;}
-.portfolio_03 .pf_c .container h2 {font-size:1.3rem;text-align:center;margin-top:1rem;font-family: 'Noto Serif KR', serif;
-font-weight:500;}
-.portfolio_03 .pf_c_t {width:100%;height:35rem;padding:0.75rem;}
-.portfolio_03 .mockup {background:url(../img/mockup1.png) no-repeat center top/100%;padding:5% 5% 5% 5%;}
-.portfolio_03 .mockup figure {position:relative;padding-bottom:56.25%;overflow:hidden;}
-.portfolio_03 .mockup figure img {position:absolute;top:0;left:0;
-width:100%;transition:5s;cursor:pointer;}
-.portfolio_03 .mockup figure:hover {transform:translateY(-50%);top:100%;transition:0.5s;}
+.portfolio_03 .pf_c figure:hover img {transform:translateY(-50%);top:100%;transition:1s;}
 
-
-.portfolio_03 .pf_c_b {display:flex;position:absolute;bottom:0;left:0;width:100%;height:10rem;
-border-top:1px solid var(--br);line-height:1.1rem;}
+.portfolio_03 .pf_c_b {display:flex;position:absolute;bottom:0;left:5%;width:65%;height:10rem;
+border-top:1px solid var(--br);line-height:1.1rem;background:var(--bg);}
 
 .portfolio_03 .pf_c_b .txt {padding:0.75rem;font-size:0.95rem;}
 .portfolio_03 .pf_c_b .first {width:33.3%;height:10rem;}
@@ -166,7 +151,8 @@ border-top:1px solid var(--br);line-height:1.1rem;}
 
 .portfolio_03 .pf_r {display:flex;width:30%;height:calc(100vh - 4rem);border-left:1px solid var(--br);}
 .portfolio_03 .pf_r .pf_r_t {width:100%;text-align:center;margin:1.5rem 0;}
-.portfolio_03 .pf_r .pf_r_t p {font-size:1.2rem;}
+.portfolio_03 .pf_r .pf_r_t h2 {font-size:1.2rem;line-height:2rem;font-weight:500;font-family: 'Noto Serif KR', serif;}
+.portfolio_03 .pf_r .pf_r_t p {font-size:1rem;margin-top:0.5rem;}
 .portfolio_03 .pf_r .pf_r_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;right:0;width:30%;height:20rem;
 border-top:1px solid var(--br);}
 .portfolio_03 .pf_r_b .color {width:50%;height:10rem;padding:0.75rem;font-size:1rem;}
@@ -190,17 +176,9 @@ background:rosybrown;}
 .portfolio_04 .l_b_03 {border-right:1px solid var(--br);}
 
 .portfolio_04 .pf_c {position:relative;width:65%;height:calc(100vh - 4rem);overflow:hidden;}
-.portfolio_04 .pf_c .container {width:60%;height:100%;margin:3rem auto 0;}
-.portfolio_04 .pf_c .container h2 {font-size:1.3rem;text-align:center;margin-top:1rem;font-family: 'Noto Serif KR', serif;
-    font-weight:500;}
-.portfolio_04 .pf_c_t {width:100%;height:35rem;padding:0.75rem;}
-.portfolio_04 .mockup {background:url(../img/mockup1.png) no-repeat center top/100%;padding:5% 5% 5% 5%;}
-.portfolio_04 .mockup figure {position:relative;padding-bottom:56.25%;overflow:hidden;}
-.portfolio_04 .mockup figure img {position:absolute;top:0;left:0;
-width:100%;transition:5s;cursor:pointer;}
-.portfolio_04 .mockup figure:hover {transform:translateY(-50%);top:100%;transition:0.5s;}
+.portfolio_04 .pf_c figure:hover img {transform:translateY(-50%);top:100%;transition:1s;}
 
-.portfolio_04 .pf_c_b {display:flex;position:absolute;bottom:0;left:0;width:100%;height:10rem;
+.portfolio_04 .pf_c_b {display:flex;position:absolute;bottom:0;right:5%;width:65%;height:10rem;background:var(--bg);
 border-top:1px solid var(--br);line-height:1.1rem;}
 
 .portfolio_04 .pf_c_b .txt {padding:0.75rem;font-size:0.95rem;}
@@ -208,7 +186,7 @@ border-top:1px solid var(--br);line-height:1.1rem;}
 .portfolio_04 .pf_c_b .second {width:33.3%;height:10rem;border-left:1px solid var(--br);}
 .portfolio_04 .pf_c_b .third {width:33.3%;height:10rem;border-left:1px solid var(--br);}
 
-.portfolio_04 .pf_r {position:absolute;width:5%;height:100vh;top:0;right:0;
+.portfolio_04 .pf_r {position:absolute;width:5%;height:calc(100vh - 4rem);bottom:0;right:0;
 border-left:1px solid var(--br);}
 .portfolio_04 .pf_r_t {width:5%;height:calc(100vh - 4rem);}    
 
@@ -221,17 +199,10 @@ border-right:1px solid var(--br);}
 .portfolio_05 .pf_l_t {width:5%;height:calc(100vh - 4rem);}
 
 .portfolio_05 .pf_c {position:relative;width:65%;height:calc(100vh - 4rem);overflow:hidden;}
-.portfolio_05 .pf_c .container {width:60%;height:100%;margin:3rem auto 0;}
-.portfolio_05 .pf_c .container h2 {font-size:1.3rem;text-align:center;margin-top:1rem;font-family: 'Noto Serif KR', serif;
-font-weight:500;}
-.portfolio_05 .pf_c_t {width:100%;height:35rem;padding:0.75rem;}
-.portfolio_05 .mockup {background:url(../img/mockup1.png) no-repeat center top/100%;padding:5% 5% 5% 5%;}
-.portfolio_05 .mockup figure {position:relative;padding-bottom:56.25%;overflow:hidden;}
-.portfolio_05 .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:5s;cursor:pointer;}
-.portfolio_05 .mockup figure:hover {transform:translateY(-50%);top:100%;transition:0.5s;}
+.portfolio_05 .pf_c figure:hover img {transform:translateY(-50%);top:100%;transition:1s;}
 
 
-.portfolio_05 .pf_c_b {display:flex;position:absolute;bottom:0;left:0;width:100%;height:10rem;
+.portfolio_05 .pf_c_b {display:flex;position:absolute;bottom:0;left:0;width:100%;height:10rem;background:var(--bg);
 border-top:1px solid var(--br);line-height:1.1rem;}
 
 .portfolio_05 .pf_c_b .txt {padding:0.75rem;font-size:0.95rem;}
