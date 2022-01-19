@@ -69,15 +69,20 @@ position:absolute;}
 
 .popup {display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:2;}
 .popup h2 {text-align:center;font-size:1.5rem;font-weight:700;padding:1.25rem 0;}
-.popmenu {width:60rem;margin:5rem auto;background:#fff;position:relative;}
+.popmenu {width:60rem;margin:3rem auto;background:#fff;position:relative;}
 .popmenu .container {display:flex;background:#fff;padding:0 2rem 2rem 0;margin:0.5rem auto;background:url(../img/maeil.png) no-repeat bottom right;}
-.popmenu .container dl {flex:1;text-align:center;}
-.popmenu .container dl>dt {font-size:0.9rem;font-weight:700;}
-.popmenu .container dl>dt::after {content:"";display:block;width:0;height:0.15rem;background:#63ABF5;margin:0.75rem auto;transition:0.4s;}
-.popmenu .container dl>dt:hover::after {width:3rem;}
-.popmenu .container dl>dd {padding:0.5rem 0;}
+.popmenu .container dl {flex:1;text-align:center;padding:3rem 0;}
+.popmenu .container dl::after {content:"";display:block;position:absolute;top:13%;left:50%;transform:translateX(-50%);
+    width:95%;height:1px;background:#f1f1f1;}
+.popmenu .container dl>dt {font-size:1.2rem;font-weight:700;}
+.popmenu .container dl>dt::after {content:"";display:block;width:0;height:0.15rem;background:#63ABF5;margin:0.75rem auto;}
+
+.popmenu .container dl>dd {padding:0.5rem 0;font-size:0.9rem;position: relative;}
 
 .popmenu .container dl>dd:hover {color:#63ABF5;}
+.popmenu .container dl>dd::before {content:"";display:block;position:absolute;top:0;left:0;transform:translateX(-50%);
+    width:1px;height:100%;background:#f1f1f1;}
+
 .popmenu i {position:absolute;top:1.5%;right:0.75%;font-size:1.2rem;color:#63ABF5;}
 
 /* --------------------------------- 메인 슬라이드 --------------------------------- */
@@ -152,7 +157,7 @@ opacity:0;transform:translateY(100px);}
 .h_full {display:flex;width:77.5rem;margin-left:17.5rem;position:relative;}
 .h_left_text {padding:6rem 5rem 0 0;}
 .h_left_text strong {font-weight:500;color:#f00;}
-.h_left_text h2 {font-size:1.5rem;margin:0.5rem 0 1rem 0;font-weight:400;}
+.h_left_text h2 {font-size:1.5rem;margin:0.75rem 0 1rem 0;font-weight:400;}
 .h_left_text span {font-weight:700;color:#63ABF5;}
 .h_left_text p {line-height:1.2rem;font-weight:300;font-size:0.9rem;}
 
@@ -166,7 +171,7 @@ opacity:0;transform:translateY(100px);}
 
 .product {width:100%;padding:6rem 0 8rem 0;position:relative;color:#fff;background:#63ABF5;}
 .p_container {width:60rem;margin:0 auto;text-align:center;}
-.p_title h2 {font-size:1.5rem;font-weight:400;margin:0.5rem 0 0.75rem 0;}
+.p_title h2 {font-size:1.5rem;font-weight:400;margin:0.75rem 0;}
 .p_title span {font-weight:700;color:#ff0;}
 .p_title strong {font-weight:500;color:#f00;}
 .p_title p {margin-bottom:1.5rem;font-weight:100;}
@@ -203,7 +208,7 @@ opacity:0;transform:translateY(100px);}
 
 .vision {width:100%;padding:6rem 0;background:url(../img/maeil.png) no-repeat bottom right;}
 .v_title {width:60rem;margin:0 auto;text-align:center;}
-.v_title h2 {text-align:center;font-size:1.5rem;font-weight:500;margin:0.5rem 0 1rem 0;}
+.v_title h2 {text-align:center;font-size:1.5rem;font-weight:500;margin:0.75rem 0 1rem 0;}
 .v_title strong {font-weight:500;color:#f00;}
 .v_title span {font-weight:700;color:#63ABF5;}
 .v_title p {margin-bottom:1.8rem;}
@@ -234,7 +239,7 @@ opacity:0;transform:translateY(100px);}
 .v_title .con04 p {position:absolute;top:60%;left:50%;transform:translate(-50%,-50%);font-weight:100;color:#fff;width:75%;}
 
 
-.footer {background:#63ABF5;width:100%;}
+.footer {background:#63ABF5;width:100%;padding:0.5rem 0;}
 .f_tob ul {display:flex;}
 .f_tob ul>li~li {padding-left:2rem;position:relative;}
 .f_tob ul>li::after {content:"";display:block;position:absolute;top:35%;left:20px;transform:translateX(-50%);
@@ -243,7 +248,7 @@ opacity:0;transform:translateY(100px);}
 .f_tob {width:60rem;margin:0 auto;display:flex;color:#fff;padding:0.5rem 0;line-height:2;border-bottom:1px solid #82bbf5;}
 .f_tob h2 {}
 
-.f_bottom {width:60rem;margin:0 auto;display:flex;color:#fff;padding:0.5rem 0;}
+.f_bottom {width:60rem;margin:0 auto;display:flex;color:#fff;padding:0.75rem 0;}
 .f_bottom .left {width:70%;}
 .f_bottom .left h2 {}
 .f_bottom .right {width:30%;}
