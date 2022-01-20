@@ -121,7 +121,7 @@ font-size:0.75rem;line-height:1;border-radius:1rem;font-weight:400;}
 
 /* ----------------------------- 3단 병원 연혁 -----------------------------  */
 
-.facility {width:100%;margin:10rem 0;text-align:center;}
+.facility {width:100%;margin:6rem 0;text-align:center;}
 .facility strong {font-weight:400;}
 .facility p {font-weight:300;}
 .facility a {font-weight:300;}
@@ -279,40 +279,40 @@ padding:0.5rem;background:#fff;}
     .identity {width:100%;margin:6rem 0 10rem 0;}
     .identity .container_ {width:95%;margin:0 auto;}
     .identity h2 {text-align:center;font-size:1.5rem;font-weight:400;}
-    .identity h3 {position:absolute;top:12%;left:29%;transform:translate(-50%,-50%);font-size:1.6rem;}
+    .identity h3 {position:absolute;top:15%;left:15%;transform:translate(-50%,-50%);font-size:1.6rem;}
     .identity span {font-weight:700;}
-    .identity a {position:absolute;bottom:2%;left:30%;transform:translate(-50%,-50%);border:1px solid rgba(0,0,0,0.5);
-    padding:0.4rem 1.4rem;border-radius:1rem;line-height:1.1;}
-    .identity .tob {display:flex;margin-top:2rem;}
+    .identity a {position:absolute;bottom:2%;left:23%;transform:translate(-50%,-50%);border:1px solid rgba(0,0,0,0.5);
+    padding:0.4rem 1.4rem;border-radius:1rem;line-height:1.1;font-size:0.9rem;}
+    .identity .tob {display:flex;flex-direction:column;margin-top:2rem;}
     .identity strong {font-weight:700;}
 
-    .identity .tob .shoulder {width:50%;position:relative;border:0.15rem solid #fff;}
+    .identity .tob .shoulder {width:100%;position:relative;border:0.15rem solid #fff;}
     .identity .tob .shoulder .case {width:100%;overflow:hidden;}
-    .identity .tob .shoulder p {width:100%;position:absolute;top:50%;left:58%;transform:translate(-50%,-50%);
-    font-size:0.85rem;line-height:1.5;}    
+    .identity .tob .shoulder p {width:90%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);
+    font-size:0.95rem;line-height:1.5;}    
     .identity .tob .shoulder .img {background:url(../img/pain02.png) no-repeat center center/cover;width:auto;height:15rem;
     transition:0.4s;}
     .identity .tob .shoulder:hover .img {transform:scale(1.15);}
 
-    .identity .tob .patella {width:50%;border:0.15rem solid #fff;position:relative;}
+    .identity .tob .patella {width:100%;border:0.15rem solid #fff;position:relative;}
     .identity .tob .patella .case {width:100%;overflow:hidden;}
-    .identity .tob .patella p {width:100%;position:absolute;top:50%;left:58%;transform:translate(-50%,-50%);font-size:0.85rem;line-height:1.5;}
+    .identity .tob .patella p {width:90%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:0.95rem;line-height:1.5;}
     .identity .tob .patella .img {background:url(../img/pain04.png) no-repeat center center/cover;width:auto;height:15rem;
     transition:0.4s;}
 
     .identity .tob .patella:hover .img {transform:scale(1.15);}
 
-    .identity .bottom {display:flex;}
-    .identity .bottom .ankleJoint {width:50%;position:relative;border:0.15rem solid #fff;}
+    .identity .bottom {display:flex;flex-direction:column;}
+    .identity .bottom .ankleJoint {width:100%;position:relative;border:0.15rem solid #fff;}
     .identity .bottom .ankleJoint .case {width:100%;overflow:hidden;}
     .identity .bottom .ankleJoint .img {background:url(../img/pain05.png) no-repeat right center/cover;width:auto;height:15rem;transition:0.4s;}
-    .identity .bottom .ankleJoint p {width:100%;position:absolute;top:50%;left:58%;transform:translate(-50%,-50%);font-size:0.85rem;line-height:1.5;}
+    .identity .bottom .ankleJoint p {width:90%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:0.95rem;line-height:1.5;}
     .identity .bottom .ankleJoint:hover .img {transform:scale(1.15);}
 
-    .identity .bottom .vertebrae {width:50%;position:relative;border:0.15rem solid #fff;}
+    .identity .bottom .vertebrae {width:100%;position:relative;border:0.15rem solid #fff;}
     .identity .bottom .vertebrae .case {width:100%;overflow:hidden;}
     .identity .bottom .vertebrae .img {background:url(../img/pain01.png) no-repeat center bottom/cover;width:auto;height:15rem;transition:0.4s;}
-    .identity .bottom .vertebrae p {width:100%;position:absolute;top:50%;left:58%;transform:translate(-50%,-50%);font-size:0.85rem;line-height:1.5;}
+    .identity .bottom .vertebrae p {width:90%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-size:0.95rem;line-height:1.5;}
     .identity .bottom .vertebrae:hover .img {transform:scale(1.15);} 
 
     /* ----------------------------- 반응형 2단 진료 예약 -----------------------------  */
@@ -337,40 +337,45 @@ padding:0.5rem;background:#fff;}
     /* ----------------------------- 반응형 3단 병원 연혁 -----------------------------  */
 
     .facility {width:100%;margin:10rem 0;text-align:center;}
+    .facility .container {flex-direction:column;}
     .facility strong {font-weight:400;}
     .facility p {font-weight:300;}
     .facility a {font-weight:300;}
     .facility h2 {font-size:1.5rem;font-weight:700;margin-bottom:2rem;}
 
-    .facility .itm {width:33%;}
-    .facility .f_con2 {margin:0 1rem;}
+    .facility .itm {width:100%;margin-bottom:3rem;}
+    .facility .f_con2 {margin:0 0 2rem 0;}
     .facility .text {padding-top:0.75rem;border:1px solid #ddd;height:8rem;}
-    .facility .text h3 {font-size:0.9rem;font-weight:500;margin-bottom:0.75rem;}
-    .facility .text p {padding:0 0.75rem 1.5rem 0.75rem;line-height:1.3;}
+    .facility .text h3 {font-size:1.5rem;font-weight:500;margin-bottom:1rem;}
+    .facility .text p {padding:0 0.75rem 1.5rem 0.75rem;line-height:1.5rem;font-size:1.1rem;}
 
     /* ----------------------------- 반응형 4단 공지사항 -----------------------------  */
 
-    .notice {width:100%;height:24rem;padding:3rem 0;background:#f3f3f3;}
+    .notice {width:100%;height:auto;padding:3rem 0;background:#f3f3f3;}
+    .notice .container {flex-direction:column;}
     .notice ul>li {padding:0.5rem 1rem;line-height:0.8;}
     .notice ul>li:hover {text-decoration:underline;}
-    .notice h3 {color:#111;font-size:0.9rem;font-weight:500;padding:0.75rem 1rem;}
 
+    .notice .left {width:85%;margin:0 auto;background:#fff;border:1px solid #f3f3f3;padding:1rem 0;}
+    .notice a {font-size:1rem;line-height:1.5rem;}
+    .notice .left_ {font-size:1.5rem;}
 
-    .notice .left {width:32.5%;margin:0 1rem;background:#fff;border:1px solid #f3f3f3;padding:0.5rem 0;}
-    .notice .left span {padding:0.1rem 0.25rem;background:#1A256A;font-size:0.7rem;color:#fff;margin-right:0.5rem;}
-    .notice .left strong {font-size:0.75rem;font-weight:400;float:right;}
+    .notice .left span {padding:0.1rem 0.25rem;background:#1A256A;font-size:1rem;color:#fff;margin-right:1rem;}
+    .notice .left strong {font-size:1rem;font-weight:300;float:right;}
     .notice .left i {margin-left:0.15rem;}
 
-    .notice .center {width:32.5%;margin:0 1rem;background:#fff;border:1px solid #f3f3f3;padding:0.5rem 0;}
-    .notice .center span {padding:0.1rem 0.25rem;background:#1A256A;font-size:0.7rem;color:#fff;margin-right:0.5rem;}
-    .notice .center strong {font-size:0.75rem;font-weight:400;float:right;}
+    .notice .center {width:85%;margin:0 auto;background:#fff;border:1px solid #f3f3f3;padding:1rem 0;}
+    .notice .center span {padding:0.1rem 0.25rem;background:#1A256A;font-size:1rem;color:#fff;margin-right:1rem;}
+    .notice .center strong {font-size:1rem;font-weight:300;float:right;}
     .notice .center i {margin-left:0.15rem;}
     .notice .center ul>li {width:92%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 
-    .notice .right {width:32.5%;background:#fff;border:1px solid #f3f3f3;padding:0.5rem 0;}
-    .notice .right span {padding:0.1rem 0.25rem;background:#1A256A;font-size:0.7rem;color:#fff;margin-right:0.5rem;}
-    .notice .right strong {font-size:0.75rem;font-weight:400;float:right;}
+    .notice .right {width:85%;margin:0 auto;background:#fff;border:1px solid #f3f3f3;padding:1rem 0;}
+    .notice .right span {padding:0.1rem 0.25rem;background:#1A256A;font-size:1rem;color:#fff;margin-right:0.5rem;}
+    .notice .right strong {font-size:1rem;font-weight:300;float:right;}
     .notice .right i {margin-left:0.15rem;}
+
+    .notice h3 {color:#111;font-size:1.2rem;font-weight:500;padding:0.75rem 1rem;}
 
     /* ----------------------------- 반응형 5단 엠블럼 -----------------------------  */
 
@@ -383,16 +388,16 @@ padding:0.5rem;background:#fff;}
     .e_btn .xi-angle-right-min {display:none;position:absolute;top:50%;right:15%;transform:translate(-50%,-50%);padding:0.7rem 0.15rem;background:#1A256A;color:#fff;cursor:pointer;}
     /* ----------------------------- 반응형 푸터 -----------------------------  */
 
-    .footer {width:100%;color:#fff;background:#1A256A;text-align:center;}
-    .footer span {font-weight:500;color:#ff0;}
+    .footer {width:100%;color:#fff;background:#1A256A;text-align:center;padding:1rem 0;}
+    .footer span {font-weight:400;color:#ff0;}
     .footer .container_ ul {display:inline-block;}
     .footer .container_ ul>li~li::after {content:"";display:none;width:1px;height:0.6rem;position:absolute;top:50%;left:0;
     transform:translateY(-50%);background:rgba(255,255,255,0.15);}
     .footer .container_ ul>li {position:relative;font-weight:300;padding:0.5rem 0.75rem;}
-    .footer .container_ .bottom {padding:0 0.75rem 2rem 0;font-size:0.8rem;}
-    .footer .container_ address {padding:0 0.75rem;font-weight:300;}
-    .footer .container_ .top {padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.15);font-size:0.8rem;}
-    .footer .container_ .cener {padding:1rem 0 0.75rem 0;font-size:0.8rem;}
+    .footer .container_ .bottom {padding:0 0rem 2rem 0;font-size:1.1rem;}
+    .footer .container_ address {padding:0 0rem;font-weight:300;}
+    .footer .container_ .top {padding:1rem 0;border-bottom:1px solid rgba(255,255,255,0.15);font-size:1.1rem;}
+    .footer .container_ .cener {padding:1rem 0 0.75rem 0;font-size:1.1rem;}
 
     .mopen {display:block;}
 
