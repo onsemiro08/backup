@@ -213,7 +213,7 @@ border-top:1px solid var(--br);line-height:1.1rem;}
 border-left:1px solid var(--br);}
 .portfolio_04 .pf_r_t {width:5%;height:calc(100vh - 4rem);}    
 
-/* ----------------------------------------------- 섹션 5 포폴4 ----------------------------------------------- */
+/* ----------------------------------------------- 섹션 6 포폴5 ----------------------------------------------- */
 
 .portfolio_05 {position:relative;display:flex;border-bottom:1px solid var(--br);}
 
@@ -249,18 +249,50 @@ border-top:1px solid var(--br);}
 .portfolio_05 .r_b_02 {border-bottom:1px solid var(--br);}
 .portfolio_05 .r_b_03 {border-right:1px solid var(--br);}
 
+
+
+/* ----------------------------------------------- 섹션 7 포폴6 ----------------------------------------------- */
+
+.Training {position:relative;display:flex;border-bottom:1px solid var(--br);}
+.Training .top {position:absolute;top:0;left:0;}
+.Training h3 {font-size:3rem;font-weight:600;font-family: 'Noto Serif KR', serif;text-align:left;
+    position:absolute;top:15%;left:3%;}
+.Training .box {display:flex;width:100%;height:calc(100vh - 5rem);border:1px solid #ff0;}
+.Training .t_txt {position:absolute;bottom:19%;left:3%;}
+.Training .t_txt p {font-size:1rem;font-weight:300;line-height:1.5rem;}
+
+.Training ul {position:absolute;top:28%;left:3%;}
+.Training ul>li {font-size:1.2rem;font-weight:300;padding:1rem 10rem 1rem 1.5rem;margin:1rem 0;background:var(--dc);
+color:var(--lc);border-radius:3rem;line-height:1.2rem;}
+
+
+.main_slider {position:absolute;bottom:2%;right:0;width:60%;}
+.main_slider figure {padding:0 1rem;position:relative;}
+.main_slider figure::after {content:"";position:absolute;left:1rem;bottom:-6.6rem;background:var(--br);
+width:1px;height:13rem;}
+.main_slider figure h2 {font-weight:500;font-size:1.2rem;margin:1rem 0 0.5rem 0;}
+.main_slider figure a {display:block;font-size:0.9rem;padding-bottom:7rem;}
+
+
 /* ----------------------------------------------- 섹션 6 프로필 ----------------------------------------------- */
 
 .profile {position:relative;display:flex;border-bottom:1px solid var(--br);}
-.profile .pr_l {position:relative;width:30%;height:calc(100vh - 14rem);border-right:1px solid var(--br);}
-.profile .pr_l .pr_t {display:flex;width:100%;height:calc(100vh - 20rem);}
+.profile .pf_sl {position:absolute;width:5%;height:100vh;top:0;left:0;border-right:1px solid var(--br);}
+.profile .pf_l_t {width:5%;height:calc(100vh - 4rem);}
 
-.profile .pr_l .contaier {width:100%;height:8rem;border-top:1px solid var(--br);}
-.profile .pr_c {position:relative;width:70%;height:calc(100vh - 4rem);}
-.profile .pr_r {position:absolute;top:0;right:0;width:5%;height:100vh;border-left:1px solid var(--br);}
+.profile .pr_l {position:relative;width:100%;height:calc(100vh - 29rem);}
+.profile .pr_l h2 {font-size:2rem;font-weight:500;font-family:'Noto Serif KR', serif;}
+.pr_txt {margin:8rem 10rem;}
+.pr_txt h2 {line-height:4rem;}
 
-.profile .p_b {position:absolute;bottom:0;left:0;width:100%;height:10rem;border-top:1px solid var(--br);}
+.profile .p_b {display:flex;width:70rem;height:10rem;margin:0rem auto 15rem auto;}
+.profile .p_b_l {width:20%;border-right:1px solid var(--dc);}
+.profile .p_b_l h3 {font-size:1.2rem;font-weight:500;margin-bottom:1rem;}
+.profile .p_b_c {width:35%;border-right:1px solid var(--dc);}
+.profile .p_b_c ul {display:flex}
+.profile .p_b_c ul>li {font-size:2rem;}
 
+.profile .p_b_r {width:45%;}
 
 
 #cover {display:none;position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);width:100%;height:100vh;
