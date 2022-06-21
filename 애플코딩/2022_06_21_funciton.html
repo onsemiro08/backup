@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+        <div class="aleart-box" id="aleart">
+            <p>aleart 박스</p>
+            <button onclick="알림창열기()">닫기</button>
+        </div>
+        <button onclick="알림창닫기()">버튼</button>
+        
+        <script>
+            
+            function 알림창열기(){
+                document.getElementById('aleart').style.display = 'none';
+            }
+            // funcion 축약된 이름(){ 코드 } 
+            // 코드를 위에서 아래로 읽기 때문에 html 코드 다음에 js (아이디 지정) 해야 함
+            // Console 에서 오류 확인 가능
+            // 닫기 버튼을 css 로 display none 하고 js 로 block 해서 누르면 열림
+            function 알림창닫기(){
+                document.getElementById('aleart').style.display = 'block';
+            }
+        </script>
+    </body>
+</html>
