@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+        <div class="aleart-box" id="aleart">
+            <p id="title">aleart 박스</p>
+                <button onclick="알림창열기('none')">닫기</button>
+        </div>
+        
+        <button onclick="알림창1열기('아이디를입력하세요')">버튼1</button>
+        <button onclick="알림창1열기('비밀번호를입력하세요')">버튼2</button>
+
+        <script>
+            
+            function 알림창1열기(구멍){
+                document.getElementById('title').innerHTML = 구멍;
+                document.getElementById('aleart').style.display = 'block';}
+
+            // 파라미터를 이용해서 함수를 업그레이드 했다?
+            // 알림창열기() 를 실행하는데 구멍 대신 ~를 적용 해주세요 (숫자는 '' 필요하지 않다)
+            // 비슷한 함수를 구멍 하나로 적용할 수 있다
+            // 구멍은 , 로 구분해서 무한하게 이용 가능
+
+        </script>
+    </body>
+</html>

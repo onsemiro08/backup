@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+
+        <div class="aleart-box" id="aleart">
+            <p id="title">aleart 박스</p>
+                <button id="close">닫기</button>
+        </div>
+        
+        <button onclick="알림창1열기('아이디를입력하세요')">버튼1</button>
+        <button onclick="알림창1열기('비밀번호를입력하세요')">버튼2</button>
+
+        <script>
+            
+            document.getElementById('close').addEventListener('click', function(){
+                document.getElementById('aleart').style.display = 'none';
+            });
+
+            function 알림창1열기(구멍){
+                document.getElementById('title').innerHTML = 구멍;
+                document.getElementById('aleart').style.display = 'block';}
+
+
+            // document.getElementById('close' | 이벤트 = 클릭, 키다운,스크롤 등등..) < 클릭하면
+            //.addEventListener('click', function(){ < 작동
+
+        </script>
+    </body>
+</html>
