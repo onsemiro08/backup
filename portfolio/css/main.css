@@ -29,6 +29,8 @@ body {font-size:0.8rem;color:var(--dc);font-weight:300;}
 #header .top .top_r {width:15%;}
 .top {display:block;width:100%;height:4rem;font-size:0;border-bottom:1px solid var(--br);}
 .intro_stoke {display:flex;}
+.period {font-size:0.85rem;}
+.s_title {font-size:0.85rem;}
 
 #header nav {position:fixed;top:4%;right:3rem;transform:translateY(-50%);z-index:999;}
 #header nav ul {display:flex;padding-right:0.75rem;}
@@ -91,7 +93,7 @@ border-top:1px solid var(--br);line-height:1.1rem;z-index:999;background:var(--b
 .portfolio_01 .pf_r .pf_r_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;right:0;width:30%;height:20rem;
 border-top:1px solid var(--br);}
 .portfolio_01 .pf_r_b .color {width:50%;height:10rem;padding:0.75rem;border-left:1px solid var();}
-.portfolio_01 .pf_r_b .color p {font-size:1rem;line-height:1.3rem;}
+.portfolio_01 .pf_r_b .color p {line-height:1.3rem;}
 .portfolio_01 .r_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);background:#009c84;color:var(--lc);}
 .portfolio_01 .r_b_02 {border-bottom:1px solid var(--br);background:#fff;color:#111;}
 .portfolio_01 .r_b_03 {border-right:1px solid var(--br);background:#ed6d01;color:var(--lc);}
@@ -111,7 +113,7 @@ border-top:1px solid var(--br);}
 .portfolio_02 .pf_l .pf_l_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;left:0;
 width:30%;height:20rem;border-top:1px solid var(--br);border-right:1px solid var(--br);}
 .portfolio_02 .pf_l_b .color {width:50%;height:10rem;padding:0.75rem;font-size:1rem;}
-.portfolio_02 .pf_l_b .color p {font-size:1rem;line-height:1.3rem;}
+.portfolio_02 .pf_l_b .color p {line-height:1.3rem;}
 
 .portfolio_02 .l_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);
 background:#63abf5;color:#fff;}
@@ -165,7 +167,7 @@ border-top:1px solid var(--br);line-height:1.1rem;background:var(--bg);}
 .portfolio_03 .pf_r .pf_r_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;right:0;width:30%;height:20rem;
 border-top:1px solid var(--br);}
 .portfolio_03 .pf_r_b .color {width:50%;height:10rem;padding:0.75rem;font-size:1rem;border-left:1px solid var(--br);}
-.portfolio_03 .pf_r_b .color p {font-size:1rem;line-height:1.3rem;}
+.portfolio_03 .pf_r_b .color p {line-height:1.3rem;}
 
 .portfolio_03 .r_b_01 {border-bottom:1px solid var(--br);background:#1a256a;color:var(--lc);}
 .portfolio_03 .r_b_02 {border-bottom:1px solid var(--br);background:#ffff00;color:#111;}
@@ -188,7 +190,7 @@ border-top:1px solid var(--br);}
 width:30%;height:20rem;border-top:1px solid var(--br);}
 .portfolio_04 .pf_l_b .color {width:50%;height:10rem;padding:0.75rem;font-size:1rem;border-right:1px solid var(--br);
 color:#fff;}
-.portfolio_04 .pf_l_b .color p {font-size:1rem;line-height:1.3rem;}
+.portfolio_04 .pf_l_b .color p {line-height:1.3rem;}
 .portfolio_04 .l_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);
 background:#30b59e;}
 .portfolio_04 .l_b_02 {border-bottom:1px solid var(--br);background:#fff;color:#111;}
@@ -212,44 +214,6 @@ border-top:1px solid var(--br);line-height:1.1rem;}
 .portfolio_04 .pf_r {position:absolute;width:5%;height:calc(100vh - 4rem);bottom:0;right:0;
 border-left:1px solid var(--br);}
 .portfolio_04 .pf_r_t {width:5%;height:calc(100vh - 4rem);}    
-
-/* ----------------------------------------------- 섹션 6 포폴5 ----------------------------------------------- */
-
-.portfolio_05 {position:relative;display:flex;border-bottom:1px solid var(--br);}
-
-.portfolio_05 .pf_l {position:absolute;width:5%;height:100vh;top:0;left:0;
-border-right:1px solid var(--br);}
-.portfolio_05 .pf_l_t {width:5%;height:calc(100vh - 4rem);}
-
-.portfolio_05 .pf_c {position:relative;width:65%;height:calc(100vh - 4rem);overflow:hidden;}
-.portfolio_05 .pf_c figure:hover img {transform:translateY(-50%);top:100%;transition:1s;}
-
-
-.portfolio_05 .pf_c_b {display:flex;position:absolute;bottom:0;left:0;width:100%;height:10rem;background:var(--bg);
-border-top:1px solid var(--br);line-height:1.1rem;}
-
-.portfolio_05 .pf_c_b .txt {padding:0.75rem;font-size:0.95rem;}
-.portfolio_05 .pf_c_b .first {width:33.3%;height:10rem;}
-.portfolio_05 .pf_c_b .second {width:33.3%;height:10rem;border-left:1px solid var(--br);}
-.portfolio_05 .pf_c_b .third {width:33.3%;height:10rem;border-left:1px solid var(--br);}
-
-.portfolio_05 .pf_r {display:flex;width:30%;height:calc(100vh - 4rem);border-left:1px solid var(--br);}
-.portfolio_05 .pf_r .pf_r_t {width:100%;text-align:center;margin:1.5rem 0;}
-.portfolio_05 .pf_r .pf_r_t {width:100%;margin:1.5rem 0;}
-.portfolio_05 .pf_r .pf_r_t .txt {width:90%;margin:0 auto;line-height:1.3rem;text-align:right;}
-.portfolio_05 .pf_r .pf_r_t h2 {font-size:1.8rem;font-weight:400;line-height:1.8rem;margin-bottom:1.2rem;}
-.portfolio_05 .pf_r .pf_r_t h3 {font-size:1rem;font-weight:400;line-height:1.8rem;}
-.portfolio_05 .pf_r .pf_r_t span {font-weight:300;margin-left:0.5rem;}
-
-.portfolio_05 .pf_r .pf_r_b {position:absolute;display:flex;flex-wrap:wrap;bottom:0;right:0;width:30%;height:20rem;
-border-top:1px solid var(--br);}
-.portfolio_05 .pf_r_b .color {width:50%;height:10rem;padding:0.75rem;font-size:1rem;}
-.portfolio_05 .pf_r_b .color p {font-size:1rem;line-height:1.3rem;}
-.portfolio_05 .r_b_01 {border-right:1px solid var(--br);border-bottom:1px solid var(--br);}
-.portfolio_05 .r_b_02 {border-bottom:1px solid var(--br);}
-.portfolio_05 .r_b_03 {border-right:1px solid var(--br);}
-
-
 
 /* ----------------------------------------------- 섹션 7 포폴6 ----------------------------------------------- */
 
@@ -277,23 +241,28 @@ width:1px;height:13rem;}
 /* ----------------------------------------------- 섹션 6 프로필 ----------------------------------------------- */
 
 .profile {position:relative;display:flex;border-bottom:1px solid var(--br);}
+.profile ul>li {font-size:0.82rem;line-height:1.15rem;}
+.profile h3 {font-size:1.2rem;font-weight:500;}
+.profile .top {position:absolute;top:0;left:0;}
 .profile .pf_sl {position:absolute;width:5%;height:100vh;top:0;left:0;border-right:1px solid var(--br);}
 .profile .pf_l_t {width:5%;height:calc(100vh - 4rem);}
 
-.profile .pr_l {position:relative;width:100%;height:calc(100vh - 29rem);}
+.profile .pr_l {position:relative;width:100%;}
 .profile .pr_l h2 {font-size:2rem;font-weight:500;font-family:'Noto Serif KR', serif;}
-.pr_txt {margin:8rem 10rem;}
+.pr_txt {margin:13rem 12rem 3rem;}
 .pr_txt h2 {line-height:4rem;}
 
-.profile .p_b {display:flex;width:70rem;height:10rem;margin:0rem auto 15rem auto;}
-.profile .p_b_l {width:20%;border-right:1px solid var(--dc);}
-.profile .p_b_l h3 {font-size:1.2rem;font-weight:500;margin-bottom:1rem;}
-.profile .p_b_c {width:35%;border-right:1px solid var(--dc);}
-.profile .p_b_c ul {display:flex}
-.profile .p_b_c ul>li {font-size:2rem;}
+.profile .p_b {display:flex;width:70rem;height:10rem;margin:0rem 12rem;}
+.profile .p_b h3 {padding:0.8rem 0;}
+.profile .p_b_l {width:20%;border-right:1px solid var(--dc);line-height:1rem;}
+.profile .p_b_l i {font-size:1.2rem;margin-right:0.15rem;}
+.profile .p_b .i_line {margin:0.3rem 0;}
+.profile .p_b_c {width:35%;border-right:1px solid var(--dc);margin-left:0.8rem;}
+.profile .p_b_c .icon {display:flex;margin-bottom:0.2rem;}
+.profile .p_b_c ul>li i {font-size:2rem;margin:0 0.15rem;}
 
-.profile .p_b_r {width:45%;}
-
+.profile .p_b_r {width:45%;margin-left:0.8rem;}
+.profile .p_b_r h3 {padding:0.8rem 0;}
 
 #cover {display:none;position:fixed;top:0;left:0;background:rgba(0,0,0,0.7);width:100%;height:100vh;
 z-index:998;}
